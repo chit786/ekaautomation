@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.479975">
+<testcase classname="User should be able to navigate to various pages" name="User navigates demoaut website" time="7.479975">
+<system-out><![CDATA[Given Open Firefox and navigate to homepage.................................passed
+And user sees sign in table.................................................passed
+When user clicks on Register................................................passed
+Then user sees registration page............................................passed
+When user clicks on Support.................................................passed
+Then user sees support page.................................................passed
+When user clicks on Contact.................................................passed
+Then user sees contact page.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
