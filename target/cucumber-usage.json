@@ -1,0 +1,92 @@
+[
+  {
+    "source": "^title of the page is \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "title of the page is \"Computers database\"",
+        "aggregatedDurations": {
+          "average": 0.03093751,
+          "median": 0.03093751
+        },
+        "durations": [
+          {
+            "duration": 0.03093751,
+            "location": "HomePageUIValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" is launched and user navigates to homepage$",
+    "steps": [
+      {
+        "name": "\"Chrome\" is launched and user navigates to homepage",
+        "aggregatedDurations": {
+          "average": 1.114918204,
+          "median": 1.114918204
+        },
+        "durations": [
+          {
+            "duration": 1.114918204,
+            "location": "HomePageUIValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^computer database list table should be displayed$",
+    "steps": [
+      {
+        "name": "computer database list table should be displayed",
+        "aggregatedDurations": {
+          "average": 0.02462401,
+          "median": 0.02462401
+        },
+        "durations": [
+          {
+            "duration": 0.02462401,
+            "location": "HomePageUIValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^header of the page should display the \"([^\"]*)\" link having \"([^\"]*)\" background color$",
+    "steps": [
+      {
+        "name": "header of the page should display the \"Play sample application — Computer database\" link having \"black\" background color",
+        "aggregatedDurations": {
+          "average": 0.090820058,
+          "median": 0.090820058
+        },
+        "durations": [
+          {
+            "duration": 0.090820058,
+            "location": "HomePageUIValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^label for total computers found should be displayed$",
+    "steps": [
+      {
+        "name": "label for total computers found should be displayed",
+        "aggregatedDurations": {
+          "average": 0.034282607,
+          "median": 0.034282607
+        },
+        "durations": [
+          {
+            "duration": 0.034282607,
+            "location": "HomePageUIValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]

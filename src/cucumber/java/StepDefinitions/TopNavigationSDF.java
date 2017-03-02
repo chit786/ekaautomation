@@ -19,15 +19,15 @@ public class TopNavigationSDF {
 
 
     String url = "http://newtours.demoaut.com/";
-    String browser = "firefox";
+    String browser = "chrome";
     Home homepage;
     Register registerPage ;
     Support supportPage ;
     Contact contactPage ;
     AbstractPage absPage ;
 
-    @Given("^Open Firefox and navigate to homepage$")
-    public void open_Firefox_and_navigate_to_homepage() throws Throwable {
+    @Given("^Open Chrome and navigate to homepage$")
+    public void open_Chrome_and_navigate_to_homepage() throws Throwable {
         absPage = new AbstractPage(driver);
         homepage = absPage.navigateToHome(url,browser);
 

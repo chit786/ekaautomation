@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mkolisnyk:cucumber-runner:1.0.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mkolisnyk/cucumber-runner/1.0.8/c1b6944a2e7892d848eca8cc11318bc67a205f6e/cucumber-runner-1.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mkolisnyk/cucumber-runner/1.0.8/361f1b297398f99d0d543ac01cf279a5fa1e84c4/cucumber-runner-1.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

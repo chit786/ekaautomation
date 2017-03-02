@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mkolisnyk:cucumber-report-generator:1.0.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mkolisnyk/cucumber-report-generator/1.0.8/41fffa0875fbb344a430c77152e456f9aa8f0b47/cucumber-report-generator-1.0.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mkolisnyk/cucumber-report-generator/1.0.8/96be706bdd98a9f3ca3c3856f8591af89e6bc5d7/cucumber-report-generator-1.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

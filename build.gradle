@@ -15,7 +15,9 @@ dependencies {
     testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.53.0'
     cucumberCompile 'info.cukes:cucumber-java:1.2.4'
     testCompile 'info.cukes:cucumber-junit:1.2.4'
-
+    compile 'com.github.mkolisnyk:cucumber-reporting-maven-plugin:1.0.8'
+    compile 'com.github.mkolisnyk:cucumber-runner:1.0.8'
+    compile 'com.github.mkolisnyk:cucumber-report-generator:1.0.8'
 }
 cucumber {
     formats = ['pretty','junit:build/cucumber.xml']

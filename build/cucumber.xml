@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.479975">
-<testcase classname="User should be able to navigate to various pages" name="User navigates demoaut website" time="7.479975">
-<system-out><![CDATA[Given Open Firefox and navigate to homepage.................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="4" time="23.933372">
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="4.968949">
+<skipped><![CDATA[Given "Chrome" is launched and user navigates to homepage...................undefined
+Then header of the page should display the "Play sample application — Computer database" link having "black" background color.undefined
+And label for total computers found should be displayed.....................undefined
+And computer database list table should be displayed........................undefined
+And input field to filter the computers by name should be displayed.........undefined
+And "Filter by name" button of "blue" color should be displayed.............undefined
+And "Add a new computer" button of "green" color should be displayed........undefined
+And "Next" and "Previous" buttons in the footer is visible..................undefined
+And pagination should be present in the footer..............................undefined
+]]></skipped>
+</testcase>
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page" time="3.752311">
+<system-out><![CDATA[Given Open "Chrome" and navigate to homepage................................passed
+And user sees a table of computers..........................................passed
+And a filter computer by name option........................................passed
+And add a new computer button...............................................passed
+And next and previous list options..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I should be able to see Computer Database Page" name="validate the design of homepage" time="3.459988">
+<failure message="java.lang.AssertionError: failing&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:79)&#10;&#9;at ✽.And &quot;Play sample application - Computer database&quot; link should be present on top(HomePageValidation.feature:14)&#10;"><![CDATA[Given User is on Homepage...................................................passed
+When page is visible to user................................................passed
+Then title of the page should be "Computers database".......................passed
+And "Play sample application - Computer database" link should be present on top.failed
+And color of the header should be "black"...................................skipped
+
+StackTrace:
+java.lang.AssertionError: failing
+	at org.junit.Assert.fail(Assert.java:88)
+	at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:79)
+	at ✽.And "Play sample application - Computer database" link should be present on top(HomePageValidation.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="User should be able to navigate to various pages" name="User navigates demoaut website" time="11.752124">
+<system-out><![CDATA[Given Open Chrome and navigate to homepage..................................passed
 And user sees sign in table.................................................passed
 When user clicks on Register................................................passed
 Then user sees registration page............................................passed

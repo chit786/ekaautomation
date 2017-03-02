@@ -1,0 +1,19 @@
+Feature: As a user I should be able to see Computer Database Page
+
+  @home
+  Scenario: User navigates to the website and see Computer Database Home page with desired controls                               # HomePageUIValidation.feature:3
+    Given "Chrome" is launched and user navigates to homepage                                                                     # HomePageUIValidationSDF.is_launched_and_user_navigates_to_homepage(String)
+    When title of the page is "Computers database"                                                                                # HomePageUIValidationSDF.title_of_the_page_is(String)
+    Then header of the page should display the "Play sample application — Computer database" link having "black" background color # HomePageUIValidationSDF.header_of_the_page_should_display_the_link_having_background_color(String,String)
+    And label for total computers found should be displayed                                                                       # HomePageUIValidationSDF.label_for_total_computers_found_should_be_displayed()
+    And computer database list table should be displayed                                                                          # HomePageUIValidationSDF.computer_database_list_table_should_be_displayed()
+    And input field to filter the computers by name should be displayed                                                           # HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed()
+      java.lang.AssertionError: test
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)
+      	at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)
+
+    And "Filter by name" button of "blue" color should be displayed                                                               # HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)
+    And "Add a new computer" button of "green" color should be displayed                                                          # HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)
+    And "Next" and "Previous" buttons in the footer is visible                                                                    # HomePageUIValidationSDF.and_buttons_in_the_footer_is_visible(String,String)
+    And pagination should be present in the footer                                                                                # HomePageUIValidationSDF.pagination_should_be_present_in_the_footer()
