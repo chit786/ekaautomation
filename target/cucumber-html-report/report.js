@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6008086470,
+  "duration": 5195130842,
   "status": "passed"
 });
 formatter.scenario({
@@ -84,7 +84,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.is_launched_and_user_navigates_to_homepage(String)"
 });
 formatter.result({
-  "duration": 1114918204,
+  "duration": 361627262,
   "status": "passed"
 });
 formatter.match({
@@ -97,7 +97,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.title_of_the_page_is(String)"
 });
 formatter.result({
-  "duration": 30937510,
+  "duration": 30553824,
   "status": "passed"
 });
 formatter.match({
@@ -114,28 +114,28 @@ formatter.match({
   "location": "HomePageUIValidationSDF.header_of_the_page_should_display_the_link_having_background_color(String,String)"
 });
 formatter.result({
-  "duration": 90820058,
+  "duration": 111952871,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.label_for_total_computers_found_should_be_displayed()"
 });
 formatter.result({
-  "duration": 34282607,
+  "duration": 56449996,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.computer_database_list_table_should_be_displayed()"
 });
 formatter.result({
-  "duration": 24624010,
+  "duration": 56900383,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed()"
 });
 formatter.result({
-  "duration": 34968290,
+  "duration": 57410831,
   "error_message": "java.lang.AssertionError: test\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)\n\tat ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)\n",
   "status": "failed"
 });
@@ -195,7 +195,7 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 792531152,
+  "duration": 1028486382,
   "status": "passed"
 });
 });

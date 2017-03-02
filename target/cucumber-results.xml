@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.131168">
-<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="8.131168">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.898512">
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="6.898512">
 <failure message="java.lang.AssertionError: test&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)&#10;&#9;at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)&#10;"><![CDATA[Given "Chrome" is launched and user navigates to homepage...................passed
 When title of the page is "Computers database"..............................passed
 Then header of the page should display the "Play sample application — Computer database" link having "black" background color.passed

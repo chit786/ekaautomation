@@ -5,12 +5,12 @@
       {
         "name": "title of the page is \"Computers database\"",
         "aggregatedDurations": {
-          "average": 0.03093751,
-          "median": 0.03093751
+          "average": 0.030553824,
+          "median": 0.030553824
         },
         "durations": [
           {
-            "duration": 0.03093751,
+            "duration": 0.030553824,
             "location": "HomePageUIValidation.feature:5"
           }
         ]
@@ -23,12 +23,12 @@
       {
         "name": "\"Chrome\" is launched and user navigates to homepage",
         "aggregatedDurations": {
-          "average": 1.114918204,
-          "median": 1.114918204
+          "average": 0.361627262,
+          "median": 0.361627262
         },
         "durations": [
           {
-            "duration": 1.114918204,
+            "duration": 0.361627262,
             "location": "HomePageUIValidation.feature:4"
           }
         ]
@@ -41,12 +41,12 @@
       {
         "name": "computer database list table should be displayed",
         "aggregatedDurations": {
-          "average": 0.02462401,
-          "median": 0.02462401
+          "average": 0.056900383,
+          "median": 0.056900383
         },
         "durations": [
           {
-            "duration": 0.02462401,
+            "duration": 0.056900383,
             "location": "HomePageUIValidation.feature:8"
           }
         ]
@@ -59,12 +59,12 @@
       {
         "name": "header of the page should display the \"Play sample application — Computer database\" link having \"black\" background color",
         "aggregatedDurations": {
-          "average": 0.090820058,
-          "median": 0.090820058
+          "average": 0.111952871,
+          "median": 0.111952871
         },
         "durations": [
           {
-            "duration": 0.090820058,
+            "duration": 0.111952871,
             "location": "HomePageUIValidation.feature:6"
           }
         ]
@@ -77,12 +77,12 @@
       {
         "name": "label for total computers found should be displayed",
         "aggregatedDurations": {
-          "average": 0.034282607,
-          "median": 0.034282607
+          "average": 0.056449996,
+          "median": 0.056449996
         },
         "durations": [
           {
-            "duration": 0.034282607,
+            "duration": 0.056449996,
             "location": "HomePageUIValidation.feature:7"
           }
         ]
