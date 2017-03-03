@@ -4,7 +4,7 @@ Feature: User should see valid error messages for invalid computer details on ad
     Given User navigates to Hompage
     When User clicks Add a new computer button
     Then user sees add new computer screen
-    And User sets "" computer name, "" introduced date, "" Discontinued date, "" Company name
+    And User sets "" computer name, "" introduced date, "" Discontinued date, "-- Choose a company --" Company name
     And clicks on "Create this computer" button
     Then Computer name field should be highlighted in red
     And User sets "" computer name, "01-01-01" introduced date, "2017-01-01" Discontinued date, "Samsung Electronics" Company name

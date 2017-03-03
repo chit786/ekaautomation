@@ -1,22 +1,164 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.898512">
-<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="6.898512">
-<failure message="java.lang.AssertionError: test&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)&#10;&#9;at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)&#10;"><![CDATA[Given "Chrome" is launched and user navigates to homepage...................passed
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="69.232918">
+<testcase classname="User should see valid error messages for invalid computer details on add computer screen" name="Valid error messages should be displayed when user enters invalid details for adding new computer" time="12.479903">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red(AddNewCompNegativeValidationSDF.java:48)&#10;&#9;at ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)&#10;"><![CDATA[Given User navigates to Hompage.............................................passed
+When User clicks Add a new computer button..................................passed
+Then user sees add new computer screen......................................passed
+And User sets "" computer name, "" introduced date, "" Discontinued date, "-- Choose a company --" Company name.passed
+And clicks on "Create this computer" button.................................passed
+Then Computer name field should be highlighted in red.......................passed
+And User sets "" computer name, "01-01-01" introduced date, "2017-01-01" Discontinued date, "Samsung Electronics" Company name.passed
+And clicks on "Create this computer" button.................................passed
+Then Computer name field should be highlighted in red.......................passed
+Then Introduced date field highlighted in red...............................failed
+And User sets "NIA123" computer name, "BBBB-01-01" introduced date, "AAAA-01-01" Discontinued date, "Samsung Electronics" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Introduced date field highlighted in red...............................skipped
+Then Discontinued date field highlighted in red.............................skipped
+And User sets "NIA123" computer name, "2017-01-01" introduced date, "2017-BB-01" Discontinued date, "Samsung Electronics" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Discontinued date field highlighted in red.............................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinitions.AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red(AddNewCompNegativeValidationSDF.java:48)
+	at ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="User should be able to add new computer to the database" name="User should be able to add new computer : positive scenario" time="7.218792">
+<system-out><![CDATA[Given user is on homepage...................................................passed
+When User clicks on Add new computer button.................................passed
+Then Add a computer page should be displayed................................passed
+And user clicks on Cancel button............................................passed
+Then Homepage should be displayed...........................................passed
+And note the total number of computers......................................passed
+When User clicks on Add new computer button.................................passed
+Then Add a computer page should be displayed................................passed
+And "Add a computer" label should be displayed..............................passed
+And "Computer name" label should be displayed...............................passed
+And "Introduced date" label should be displayed.............................passed
+And "Discontinued date" label should be displayed...........................passed
+And "Company" label should be displayed.....................................passed
+And user enters "NIA123" as Computer name...................................passed
+And enters "2017-01-04" as Introduced date..................................passed
+And enters "2017-12-01" as Discontinued date................................passed
+And selects "Samsung Electronics" as company................................passed
+And clicks on Create this computer button...................................passed
+Then user should be redirected to homepage..................................passed
+And gets a confirmation message "Done! Computer NIA123 has been created"....passed
+And the total number of computers should be increased by 1..................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I should be able to see,filter and sort list of computers in database" name="user should be able to filter computers by name on Computer database HomePage" time="24.560845">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change(ComputerListSortingValidationSDF.java:97)&#10;&#9;at ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)&#10;"><![CDATA[Given user navigates to the homepage........................................passed
+When user sees computer list table..........................................passed
+Then user sees the list of computers sorted alphabetically in ascending order.passed
+And the number of computers will be noted from the header...................passed
+And User clicks filter by name button.......................................passed
+Then the list should not change.............................................passed
+And the total computer count should be same.................................passed
+And user filters list by "!@#$%^&*".........................................passed
+Then the computer list table should be gone.................................passed
+And user sees label "Nothing to display"....................................passed
+And user filters list by "testing"..........................................passed
+Then user sees computer list sorted with the name "testing".................passed
+And user filters list by "Z"................................................passed
+And the total number of computers found in the header must be noted.........passed
+Then user click on next button..............................................passed
+And sees the next 10 computers in the list with name containing "Z".........passed
+Then the count of computers in the header should not change.................failed
+And the text for current page should display "Displaying 11 to 20 of <Total Count>".skipped
+And previous button is enabled..............................................skipped
+And next button is enabled..................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinitions.ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change(ComputerListSortingValidationSDF.java:97)
+	at ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="As a user i should be able to delete any computer in the database" name="Verify Delete computer Validation for Computer Database website" time="5.346826">
+<system-out><![CDATA[Given user is on Homepage...................................................passed
+And note the total number of computers in the database......................passed
+And note the total number of computers in pagination footer.................passed
+When user clicks first computer name from the list..........................passed
+Then Edit Computer page should be opened....................................passed
+And user sees delete this computer button...................................passed
+And user clicks delete this computer button.................................passed
+And user navigates to HomePage..............................................passed
+And user sees the Delete confirmation message on the homepage...............passed
+And the total number of computers should be decreased by 1 in Header........passed
+And the total number of computers should be decreased by 1 in Pagination footer.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I should be able to edit any computer details from the computer list" name="Verify Edit computer Validation for Computer Database website" time="7.271054">
+<failure message="org.junit.ComparisonFailure: expected:&lt;0[4] Jan 0001&gt; but was:&lt;0[1] Jan 0001&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#10;&#9;at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)&#10;&#9;at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)&#10;"><![CDATA[Given user is on homepage of computer database page.........................passed
+Then user note first computer details in the list...........................passed
+And clicks on the name of first computer in the list........................passed
+And Computer Edit page should be opened.....................................passed
+And header of the page should display "Edit computer".......................passed
+And Edit page should display Save this computer and Cancel buttons..........passed
+And Delete this computer button should exist................................passed
+And user clicks Cancel button...............................................passed
+Then user sees homepage.....................................................passed
+And clicks on the name of first computer in the list........................passed
+And Computer Edit page should be opened.....................................passed
+And append "NIA123" at the end of the name of the computer..................passed
+And change introduced date to "0001-01-01"..................................passed
+And change discontinued date to "0001-01-01"................................passed
+And change company to "Apple Inc."..........................................passed
+And click Save this computer button.........................................passed
+Then user navigates to homepage.............................................passed
+And user sees edit confirmation message.....................................passed
+And user filters the list by new name.......................................passed
+Then user sees updated record for the computer..............................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<0[4] Jan 0001> but was:<0[1] Jan 0001>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)
+	at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="4.769846">
+<system-out><![CDATA[Given "Chrome" is launched and user navigates to homepage...................passed
 When title of the page is "Computers database"..............................passed
 Then header of the page should display the "Play sample application — Computer database" link having "black" background color.passed
 And label for total computers found should be displayed.....................passed
 And computer database list table should be displayed........................passed
-And input field to filter the computers by name should be displayed.........failed
-And "Filter by name" button of "blue" color should be displayed.............skipped
-And "Add a new computer" button of "green" color should be displayed........skipped
-And "Next" and "Previous" buttons in the footer is visible..................skipped
-And pagination should be present in the footer..............................skipped
+And input field to filter the computers by name should be displayed.........passed
+And "Filter by name" button of "blue" color should be displayed.............passed
+And "Add a new computer" button of "green" color should be displayed........passed
+And "Next" and "Previous" buttons in the footer is visible..................passed
+And pagination should be present in the footer..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As A user I should be able to sort computer database table" name="Verify Sorting on the computer database table for Computer Database website" time="7.585652">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order(SortByColumnValidationSDF.java:29)&#10;&#9;at ✽.And Computer details should arrange in descending alphabetical order(SortByColumnValidation.feature:8)&#10;"><![CDATA[Given user navigates to dashboard...........................................passed
+When user sees database table...............................................passed
+And user clicks on Computer name column.....................................passed
+And Computer details should arrange in descending alphabetical order........failed
+And user clicks on Introduced date column...................................skipped
+And Computer details should arrange in descending alphabetical order by introduced date.skipped
+And user clicks on Discontinued date column.................................skipped
+And Computer details should arrange in descending alphabetical order by Discontinued date.skipped
+And user clicks on company name column......................................skipped
+And Computer details should arrange in descending alphabetical order by company name.skipped
 
 StackTrace:
-java.lang.AssertionError: test
-	at org.junit.Assert.fail(Assert.java:88)
-	at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)
-	at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinitions.SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order(SortByColumnValidationSDF.java:29)
+	at ✽.And Computer details should arrange in descending alphabetical order(SortByColumnValidation.feature:8)
 ]]></failure>
 </testcase>
 </testsuite>

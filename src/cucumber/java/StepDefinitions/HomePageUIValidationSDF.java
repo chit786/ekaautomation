@@ -39,7 +39,6 @@ public class HomePageUIValidationSDF {
     @And("^input field to filter the computers by name should be displayed$")
     public void input_field_to_filter_the_computers_by_name_should_be_displayed() throws Throwable {
         Assert.assertTrue(landingPage.hasInputFieldToFilterComputers());
-        Assert.fail("test");
     }
 
     @And("^\"([^\"]*)\" button of \"([^\"]*)\" color should be displayed$")
@@ -47,7 +46,7 @@ public class HomePageUIValidationSDF {
         if(_color.equals("blue")){
             Assert.assertTrue(landingPage.hasBlueSearchButtonWithText(_btntext));
         }else if(_color.equals("green")){
-
+            Assert.assertTrue(landingPage.hasGreenAddNewCompuButtonWithText(_btntext));
         }
 
     }

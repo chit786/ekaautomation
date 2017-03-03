@@ -10,7 +10,7 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 
 
 /**
- * Created by chitrang on 15/09/16.
+ * Created by chitrang on 03/03/17.
  */
 //@RunWith(Cucumber.class)
 //@CucumberOptions(format = {"pretty", "html:target/html"},features = "src/cucumber/resources",glue= {"StepDefinitions"})
@@ -25,8 +25,8 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
         "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
         "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml" },
         features = { "src/cucumber/resources" },
-        glue = { "StepDefinitions" },
-        tags = {"@home"}
+        glue = { "StepDefinitions" }
+
         )
 public class TestRunner {
 

@@ -1,3 +1,132 @@
+Feature: User should see valid error messages for invalid computer details on add computer screen
+
+  @errors
+  Scenario: Valid error messages should be displayed when user enters invalid details for adding new computer                              # AddNewCompNegativeValidation.feature:3
+    Given User navigates to Hompage                                                                                                        # AddNewCompNegativeValidationSDF.user_navigates_to_Hompage()
+    When User clicks Add a new computer button                                                                                             # AddNewCompNegativeValidationSDF.user_clicks_Add_a_new_computer_button()
+    Then user sees add new computer screen                                                                                                 # AddNewCompNegativeValidationSDF.user_sees_add_new_computer_screen()
+    And User sets "" computer name, "" introduced date, "" Discontinued date, "-- Choose a company --" Company name                        # AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)
+    And clicks on "Create this computer" button                                                                                            # AddNewCompNegativeValidationSDF.clicks_on_button(String)
+    Then Computer name field should be highlighted in red                                                                                  # AddNewCompNegativeValidationSDF.computer_name_field_should_be_highlighted_in_red()
+    And User sets "" computer name, "01-01-01" introduced date, "2017-01-01" Discontinued date, "Samsung Electronics" Company name         # AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)
+    And clicks on "Create this computer" button                                                                                            # AddNewCompNegativeValidationSDF.clicks_on_button(String)
+    Then Computer name field should be highlighted in red                                                                                  # AddNewCompNegativeValidationSDF.computer_name_field_should_be_highlighted_in_red()
+    Then Introduced date field highlighted in red                                                                                          # AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red()
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at StepDefinitions.AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red(AddNewCompNegativeValidationSDF.java:48)
+      	at ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)
+
+    And User sets "NIA123" computer name, "BBBB-01-01" introduced date, "AAAA-01-01" Discontinued date, "Samsung Electronics" Company name # AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)
+    And clicks on "Create this computer" button                                                                                            # AddNewCompNegativeValidationSDF.clicks_on_button(String)
+    Then Introduced date field highlighted in red                                                                                          # AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red()
+    Then Discontinued date field highlighted in red                                                                                        # AddNewCompNegativeValidationSDF.discontinued_date_field_highlighted_in_red()
+    And User sets "NIA123" computer name, "2017-01-01" introduced date, "2017-BB-01" Discontinued date, "Samsung Electronics" Company name # AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)
+    And clicks on "Create this computer" button                                                                                            # AddNewCompNegativeValidationSDF.clicks_on_button(String)
+    Then Discontinued date field highlighted in red                                                                                        # AddNewCompNegativeValidationSDF.discontinued_date_field_highlighted_in_red()
+Feature: User should be able to add new computer to the database
+
+  @add
+  Scenario: User should be able to add new computer : positive scenario      # AddNewCompPositiveValidation.feature:3
+    Given user is on homepage                                                # AddNewCompPositiveValidationSDF.user_is_on_homepage()
+    When User clicks on Add new computer button                              # AddNewCompPositiveValidationSDF.user_clicks_on_Add_new_computer_button()
+    Then Add a computer page should be displayed                             # AddNewCompPositiveValidationSDF.add_a_computer_page_should_be_displayed()
+    And user clicks on Cancel button                                         # AddNewCompPositiveValidationSDF.user_clicks_on_Cancel_button()
+    Then Homepage should be displayed                                        # AddNewCompPositiveValidationSDF.homepage_should_be_displayed()
+    And note the total number of computers                                   # AddNewCompPositiveValidationSDF.note_the_total_number_of_computers()
+    When User clicks on Add new computer button                              # AddNewCompPositiveValidationSDF.user_clicks_on_Add_new_computer_button()
+    Then Add a computer page should be displayed                             # AddNewCompPositiveValidationSDF.add_a_computer_page_should_be_displayed()
+    And "Add a computer" label should be displayed                           # AddNewCompPositiveValidationSDF.label_should_be_displayed(String)
+    And "Computer name" label should be displayed                            # AddNewCompPositiveValidationSDF.label_should_be_displayed(String)
+    And "Introduced date" label should be displayed                          # AddNewCompPositiveValidationSDF.label_should_be_displayed(String)
+    And "Discontinued date" label should be displayed                        # AddNewCompPositiveValidationSDF.label_should_be_displayed(String)
+    And "Company" label should be displayed                                  # AddNewCompPositiveValidationSDF.label_should_be_displayed(String)
+    And user enters "NIA123" as Computer name                                # AddNewCompPositiveValidationSDF.user_enters_as_Computer_name(String)
+    And enters "2017-01-04" as Introduced date                               # AddNewCompPositiveValidationSDF.enters_as_Introduced_date(String)
+    And enters "2017-12-01" as Discontinued date                             # AddNewCompPositiveValidationSDF.enters_as_Discontinued_date(String)
+    And selects "Samsung Electronics" as company                             # AddNewCompPositiveValidationSDF.selects_as_company(String)
+    And clicks on Create this computer button                                # AddNewCompPositiveValidationSDF.clicks_on_Create_this_computer_button()
+    Then user should be redirected to homepage                               # AddNewCompPositiveValidationSDF.user_should_be_redirected_to_homepage()
+    And gets a confirmation message "Done! Computer NIA123 has been created" # AddNewCompPositiveValidationSDF.gets_a_confirmation_message(String)
+    And the total number of computers should be increased by 1               # AddNewCompPositiveValidationSDF.the_total_number_of_computers_should_be_increased_by(int)
+Feature: As a user I should be able to see,filter and sort list of computers in database
+
+  @filter
+  Scenario: user should be able to filter computers by name on Computer database HomePage # ComputerListSortingValidation.feature:3
+    Given user navigates to the homepage                                                  # ComputerListSortingValidationSDF.user_navigates_to_the_homepage()
+    When user sees computer list table                                                    # ComputerListSortingValidationSDF.user_sees_computer_list_table()
+    Then user sees the list of computers sorted alphabetically in ascending order         # ComputerListSortingValidationSDF.user_sees_the_list_of_computers_sorted_alphabetically_in_ascending_order()
+    And the number of computers will be noted from the header                             # ComputerListSortingValidationSDF.the_number_of_computers_will_be_noted_from_the_header()
+    And User clicks filter by name button                                                 # ComputerListSortingValidationSDF.user_clicks_filter_by_name_button()
+    Then the list should not change                                                       # ComputerListSortingValidationSDF.the_list_should_not_change()
+    And the total computer count should be same                                           # ComputerListSortingValidationSDF.the_total_computer_count_should_be_same()
+    And user filters list by "!@#$%^&*"                                                   # ComputerListSortingValidationSDF.user_filters_list_by(String)
+    Then the computer list table should be gone                                           # ComputerListSortingValidationSDF.the_computer_list_table_should_be_gone()
+    And user sees label "Nothing to display"                                              # ComputerListSortingValidationSDF.user_sees_label(String)
+    And user filters list by "testing"                                                    # ComputerListSortingValidationSDF.user_filters_list_by(String)
+    Then user sees computer list sorted with the name "testing"                           # ComputerListSortingValidationSDF.user_sees_computer_list_sorted_with_the_name(String)
+    And user filters list by "Z"                                                          # ComputerListSortingValidationSDF.user_filters_list_by(String)
+    And the total number of computers found in the header must be noted                   # ComputerListSortingValidationSDF.the_total_number_of_computers_found_in_the_header_must_be_noted()
+    Then user click on next button                                                        # ComputerListSortingValidationSDF.user_click_on_next_button()
+    And sees the next 10 computers in the list with name containing "Z"                   # ComputerListSortingValidationSDF.sees_the_next_computers_in_the_list_with_name_containing(int,String)
+    Then the count of computers in the header should not change                           # ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change()
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at StepDefinitions.ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change(ComputerListSortingValidationSDF.java:97)
+      	at ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)
+
+    And the text for current page should display "Displaying 11 to 20 of <Total Count>"   # ComputerListSortingValidationSDF.the_text_for_current_page_should_display(String)
+    And previous button is enabled                                                        # ComputerListSortingValidationSDF.previous_button_is_enabled()
+    And next button is enabled                                                            # ComputerListSortingValidationSDF.next_button_is_enabled()
+Feature: As a user i should be able to delete any computer in the database
+
+  @delete
+  Scenario: Verify Delete computer Validation for Computer Database website         # DeleteComputerValidation.feature:3
+    Given user is on Homepage                                                       # DeleteComputerValidationSDF.user_is_on_Homepage()
+    And note the total number of computers in the database                          # DeleteComputerValidationSDF.note_the_total_number_of_computers_in_the_database()
+    And note the total number of computers in pagination footer                     # DeleteComputerValidationSDF.note_the_total_number_of_computers_in_pagination_footer()
+    When user clicks first computer name from the list                              # DeleteComputerValidationSDF.user_clicks_first_computer_name_from_the_list()
+    Then Edit Computer page should be opened                                        # DeleteComputerValidationSDF.edit_Computer_page_should_be_opened()
+    And user sees delete this computer button                                       # DeleteComputerValidationSDF.user_sees_delete_this_computer_button()
+    And user clicks delete this computer button                                     # DeleteComputerValidationSDF.user_clicks_delete_this_computer_button()
+    And user navigates to HomePage                                                  # DeleteComputerValidationSDF.user_navigates_to_HomePage()
+    And user sees the Delete confirmation message on the homepage                   # DeleteComputerValidationSDF.user_sees_the_Delete_confirmation_message_on_the_homepage()
+    And the total number of computers should be decreased by 1 in Header            # DeleteComputerValidationSDF.the_total_number_of_computers_should_be_decreased_by_in_Header(int)
+    And the total number of computers should be decreased by 1 in Pagination footer # DeleteComputerValidationSDF.the_total_number_of_computers_should_be_decreased_by_in_Pagination_footer(int)
+Feature: As a user I should be able to edit any computer details from the computer list
+
+  @edit
+  Scenario: Verify Edit computer Validation for Computer Database website # EditComputerValidation.feature:3
+    Given user is on homepage of computer database page                   # EditComputerValidationSDF.user_is_on_Homepage()
+    Then user note first computer details in the list                     # EditComputerValidationSDF.user_note_first_computer_details_in_the_list()
+    And clicks on the name of first computer in the list                  # EditComputerValidationSDF.clicks_on_the_name_of_first_computer_in_the_list()
+    And Computer Edit page should be opened                               # EditComputerValidationSDF.computer_Edit_page_should_be_opened()
+    And header of the page should display "Edit computer"                 # EditComputerValidationSDF.header_of_the_page_should_display(String)
+    And Edit page should display Save this computer and Cancel buttons    # EditComputerValidationSDF.edit_page_should_display_Save_this_computer_and_Cancel_buttons()
+    And Delete this computer button should exist                          # EditComputerValidationSDF.delete_this_computer_button_should_exist()
+    And user clicks Cancel button                                         # EditComputerValidationSDF.user_clicks_Cancel_button()
+    Then user sees homepage                                               # EditComputerValidationSDF.user_sees_homepage()
+    And clicks on the name of first computer in the list                  # EditComputerValidationSDF.clicks_on_the_name_of_first_computer_in_the_list()
+    And Computer Edit page should be opened                               # EditComputerValidationSDF.computer_Edit_page_should_be_opened()
+    And append "NIA123" at the end of the name of the computer            # EditComputerValidationSDF.append_at_the_end_of_the_name_of_the_computer(String)
+    And change introduced date to "0001-01-01"                            # EditComputerValidationSDF.change_introduced_date_to(String)
+    And change discontinued date to "0001-01-01"                          # EditComputerValidationSDF.change_discontinued_date_to(String)
+    And change company to "Apple Inc."                                    # EditComputerValidationSDF.change_company_to(String)
+    And click Save this computer button                                   # EditComputerValidationSDF.click_Save_this_computer_button()
+    Then user navigates to homepage                                       # EditComputerValidationSDF.user_navigates_homepage()
+    And user sees edit confirmation message                               # EditComputerValidationSDF.user_sees_edit_confirmation_message()
+    And user filters the list by new name                                 # EditComputerValidationSDF.user_filters_the_list_by_new_name()
+    Then user sees updated record for the computer                        # EditComputerValidationSDF.user_sees_updated_record_for_the_computer()
+      org.junit.ComparisonFailure: expected:<0[4] Jan 0001> but was:<0[1] Jan 0001>
+      	at org.junit.Assert.assertEquals(Assert.java:115)
+      	at org.junit.Assert.assertEquals(Assert.java:144)
+      	at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)
+      	at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)
+
 Feature: As a user I should be able to see Computer Database Page
 
   @home
@@ -8,12 +137,28 @@ Feature: As a user I should be able to see Computer Database Page
     And label for total computers found should be displayed                                                                       # HomePageUIValidationSDF.label_for_total_computers_found_should_be_displayed()
     And computer database list table should be displayed                                                                          # HomePageUIValidationSDF.computer_database_list_table_should_be_displayed()
     And input field to filter the computers by name should be displayed                                                           # HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed()
-      java.lang.AssertionError: test
-      	at org.junit.Assert.fail(Assert.java:88)
-      	at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)
-      	at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)
-
     And "Filter by name" button of "blue" color should be displayed                                                               # HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)
     And "Add a new computer" button of "green" color should be displayed                                                          # HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)
     And "Next" and "Previous" buttons in the footer is visible                                                                    # HomePageUIValidationSDF.and_buttons_in_the_footer_is_visible(String,String)
     And pagination should be present in the footer                                                                                # HomePageUIValidationSDF.pagination_should_be_present_in_the_footer()
+Feature: As A user I should be able to sort computer database table
+
+  @sort
+  Scenario: Verify Sorting on the computer database table for Computer Database website       # SortByColumnValidation.feature:3
+    Given user navigates to dashboard                                                         # SortByColumnValidationSDF.user_navigates_to_dashboard()
+    When user sees database table                                                             # SortByColumnValidationSDF.user_sees_database_table()
+    And user clicks on Computer name column                                                   # SortByColumnValidationSDF.user_clicks_on_Computer_name_column()
+    And Computer details should arrange in descending alphabetical order                      # SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order()
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at StepDefinitions.SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order(SortByColumnValidationSDF.java:29)
+      	at ✽.And Computer details should arrange in descending alphabetical order(SortByColumnValidation.feature:8)
+
+    And user clicks on Introduced date column                                                 # SortByColumnValidationSDF.user_clicks_on_Introduced_date_column()
+    And Computer details should arrange in descending alphabetical order by introduced date   # SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order_by_introduced_date()
+    And user clicks on Discontinued date column                                               # SortByColumnValidationSDF.user_clicks_on_Discontinued_date_column()
+    And Computer details should arrange in descending alphabetical order by Discontinued date # SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order_by_Discontinued_date()
+    And user clicks on company name column                                                    # SortByColumnValidationSDF.user_clicks_on_company_name_column()
+    And Computer details should arrange in descending alphabetical order by company name      # SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order_by_company_name()

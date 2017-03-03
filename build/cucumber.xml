@@ -1,18 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="4" time="23.933372">
-<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="4.968949">
-<skipped><![CDATA[Given "Chrome" is launched and user navigates to homepage...................undefined
-Then header of the page should display the "Play sample application — Computer database" link having "black" background color.undefined
-And label for total computers found should be displayed.....................undefined
-And computer database list table should be displayed........................undefined
-And input field to filter the computers by name should be displayed.........undefined
-And "Filter by name" button of "blue" color should be displayed.............undefined
-And "Add a new computer" button of "green" color should be displayed........undefined
-And "Next" and "Previous" buttons in the footer is visible..................undefined
-And pagination should be present in the footer..............................undefined
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="6" tests="10" time="45.812452">
+<testcase classname="User should see valid error messages for invalid computer details on add computer screen" name="Valid error messages should be displayed when user enters invalid details for adding new computer" time="6.414812">
+<skipped><![CDATA[Given User navigates to Hompage.............................................pending
+When User clicks Add a new computer button..................................skipped
+Then user sees add new computer screen......................................skipped
+And User sets "" computer name, "" introduced date, "" Discontinued date, "" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Computer name field should be highlighted in red.......................skipped
+And User sets "" computer name, "01-01-01" introduced date, "2017-01-01" Discontinued date, "Samsung Electronics" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Computer name field should be highlighted in red.......................skipped
+Then Introduced date field highlighted in red...............................skipped
+And User sets "NIA123" computer name, "BBBB-01-01" introduced date, "AAAA-01-01" Discontinued date, "Samsung Electronics" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Introduced date field highlighted in red...............................skipped
+Then Discontinued date field highlighted in red.............................skipped
+And User sets "NIA123" computer name, "2017-01-01" introduced date, "2017-BB-01" Discontinued date, "Samsung Electronics" Company name.skipped
+And clicks on "Create this computer" button.................................skipped
+Then Discontinued date field highlighted in red.............................skipped
 ]]></skipped>
 </testcase>
-<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page" time="3.752311">
+<testcase classname="User should be able to add new computer to the database" name="User should be able to add new computer : positive scenario" time="3.706406">
+<skipped><![CDATA[Given user is on homepage...................................................pending
+When User clicks on Add new computer button.................................skipped
+Then Add a computer page should be displayed................................skipped
+And user clicks on Cancel button............................................skipped
+Then Homepage should be displayed...........................................skipped
+When User clicks on Add new computer button.................................skipped
+Then Add a computer page should be displayed................................skipped
+And "Add a computer" label should be displayed..............................skipped
+And "Computer name" label should be displayed...............................skipped
+And "Introduced date" label should be displayed.............................skipped
+And "Discontinued date" label should be displayed...........................skipped
+And "Company" label should be displayed.....................................skipped
+And note the total number of computers......................................skipped
+And user enters "NIA123" as Computer name...................................skipped
+And enters "2017-01-04" as Introduced date..................................skipped
+And enters "2017-12-01" as Discontinued date................................skipped
+And selects "Samsung Electonics" as company.................................skipped
+And clicks on Create this computer button...................................skipped
+Then user should be redirected to homepage..................................skipped
+And gets a confirmation message "Done! Computer NIA123 has been created"....skipped
+And the total number of computers should be increased by 1..................skipped
+And user filters the list by "NIA123".......................................skipped
+And gets a compuer record with "NIA123" as computer name....................skipped
+And "04 Jan 2017" as Introduced date........................................skipped
+And "01 Dec 2017" as Discontinued date......................................skipped
+And "Samsung Electronics" as company name...................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="As a user I should be able to see,filter and sort list of computers in database" name="user should be able to filter computers by name on Computer database HomePage" time="3.093045">
+<skipped><![CDATA[Given user navigates to homepage............................................pending
+When user sees computer list table..........................................skipped
+Then user sees the list of computers sorted alphabetically in ascending order.skipped
+And the number of computers will be noted from the header...................skipped
+And User clicks filter by name button.......................................skipped
+Then the list should not change.............................................skipped
+And the total computer count should be same.................................skipped
+And user filters list by "!@#$%^&*".........................................skipped
+Then the computer list table should be gone.................................skipped
+And user sees label "Nothing to display"....................................skipped
+And user filters list by "testing"..........................................skipped
+Then user sees computer list sorted with the name "testing".................skipped
+And user filters list by "Z"................................................skipped
+Then user sees computer list sorted with the name "Z".......................skipped
+And the total number of computers found in the header must be noted.........skipped
+And the previous button in the footer should be disabled....................skipped
+And next button in footer should be enabled.................................skipped
+Then user click on next button..............................................skipped
+And sees the next 10 computers in the list with name containing "Z".........skipped
+Then the count of computers in the header should not change.................skipped
+And the text for current page should display "Displaying 11 to 20 of <Total Count>".skipped
+And previous button is enabled..............................................skipped
+And next button is enabled..................................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="As a user i should be able to delete any computer in the database" name="Verify Delete computer Validation for Computer Database website" time="3.135751">
+<skipped><![CDATA[Given user is on Homepage...................................................pending
+And note the total number of computers in the database......................skipped
+And note the total number of computers in pagination footer.................skipped
+When user clicks first computer name from the list..........................skipped
+Then Edit Computer page should be opened....................................skipped
+And user sees delete this computer button...................................skipped
+And user clicks delete this computer button.................................skipped
+And user navigates to HomePage..............................................skipped
+And user sees the Delete confirmation message on the homepage...............skipped
+And the total number of computers should be decreased by 1 in Header........skipped
+And the total number of computers should be decreased by 1 in Pagination footer.skipped
+]]></skipped>
+</testcase>
+<testcase classname="As a user I should be able to edit any computer details from the computer list" name="Verify Edit computer Validation for Computer Database website" time="3.359263">
+<skipped><![CDATA[Given user is on homepage...................................................pending
+Then user note first computer details in the list...........................skipped
+And clicks on the name of first computer in the list........................skipped
+And Computer Edit page should be opened.....................................skipped
+And header of the page should display "Edit computer".......................skipped
+And Edit page should display Save this computer and Cancel buttons..........skipped
+And Delete this computer button should exist................................skipped
+And user clicks Cancel button...............................................skipped
+Then user sees homepage.....................................................skipped
+And clicks on the name of first computer in the list........................skipped
+And Computer Edit page should be opened.....................................skipped
+And append "NIA123" at the end of the name of the computer..................skipped
+And change introduced date to "0001-01-01"..................................skipped
+And change discontinued date to "0001-01-01"................................skipped
+And change company to "Apple Inc."..........................................skipped
+And click Save this computer button.........................................skipped
+Then user sees homepage.....................................................skipped
+And user sees edit confirmation message.....................................skipped
+And user filters the list by new name.......................................skipped
+Then user sees updated record for the computer..............................skipped
+]]></skipped>
+</testcase>
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="4.012306">
+<failure message="java.lang.AssertionError: test&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)&#10;&#9;at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)&#10;"><![CDATA[Given "Chrome" is launched and user navigates to homepage...................passed
+When title of the page is "Computers database"..............................passed
+Then header of the page should display the "Play sample application — Computer database" link having "black" background color.passed
+And label for total computers found should be displayed.....................passed
+And computer database list table should be displayed........................passed
+And input field to filter the computers by name should be displayed.........failed
+And "Filter by name" button of "blue" color should be displayed.............skipped
+And "Add a new computer" button of "green" color should be displayed........skipped
+And "Next" and "Previous" buttons in the footer is visible..................skipped
+And pagination should be present in the footer..............................skipped
+
+StackTrace:
+java.lang.AssertionError: test
+	at org.junit.Assert.fail(Assert.java:88)
+	at StepDefinitions.HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed(HomePageUIValidationSDF.java:42)
+	at ✽.And input field to filter the computers by name should be displayed(HomePageUIValidation.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page" time="3.817216">
 <system-out><![CDATA[Given Open "Chrome" and navigate to homepage................................passed
 And user sees a table of computers..........................................passed
 And a filter computer by name option........................................passed
@@ -20,21 +139,36 @@ And add a new computer button...............................................pass
 And next and previous list options..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="As a user I should be able to see Computer Database Page" name="validate the design of homepage" time="3.459988">
-<failure message="java.lang.AssertionError: failing&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:79)&#10;&#9;at ✽.And &quot;Play sample application - Computer database&quot; link should be present on top(HomePageValidation.feature:14)&#10;"><![CDATA[Given User is on Homepage...................................................passed
+<testcase classname="As a user I should be able to see Computer Database Page" name="validate the design of homepage" time="4.453107">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:78)&#10;&#9;at ✽.And &quot;Play sample application - Computer database&quot; link should be present on top(HomePageValidation.feature:14)&#10;"><![CDATA[Given User is on Homepage...................................................passed
 When page is visible to user................................................passed
 Then title of the page should be "Computers database".......................passed
 And "Play sample application - Computer database" link should be present on top.failed
 And color of the header should be "black"...................................skipped
 
 StackTrace:
-java.lang.AssertionError: failing
-	at org.junit.Assert.fail(Assert.java:88)
-	at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:79)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDefinitions.HomePageValidationSDF.link_should_be_present_on_top(HomePageValidationSDF.java:78)
 	at ✽.And "Play sample application - Computer database" link should be present on top(HomePageValidation.feature:14)
 ]]></failure>
 </testcase>
-<testcase classname="User should be able to navigate to various pages" name="User navigates demoaut website" time="11.752124">
+<testcase classname="As A user I should be able to sort computer database table" name="Verify Sorting on the computer database table for Computer Database website" time="3.579228">
+<skipped><![CDATA[Given user navigates to dashboard...........................................pending
+When user sees database table...............................................skipped
+And user clicks on Computer name column.....................................skipped
+And Computer details should arrange in descending alphabetical order........skipped
+And user clicks on Introduced date column...................................skipped
+And Computer details should arrange in descending alphabetical order by introduced date.skipped
+And user clicks on Discontinued date column.................................skipped
+And Computer details should arrange in descending alphabetical order by Discontinued date.skipped
+And user clicks on company name column......................................skipped
+And Computer details should arrange in descending alphabetical order by company name.skipped
+]]></skipped>
+</testcase>
+<testcase classname="User should be able to navigate to various pages" name="User navigates demoaut website" time="10.241318">
 <system-out><![CDATA[Given Open Chrome and navigate to homepage..................................passed
 And user sees sign in table.................................................passed
 When user clicks on Register................................................passed

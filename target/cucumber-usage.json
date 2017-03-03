@@ -1,71 +1,115 @@
 [
   {
-    "source": "^title of the page is \"([^\"]*)\"$",
+    "source": "^user filters list by \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "title of the page is \"Computers database\"",
+        "name": "user filters list by \"!@#$%^\u0026*\"",
         "aggregatedDurations": {
-          "average": 0.030553824,
-          "median": 0.030553824
+          "average": 0.457251521,
+          "median": 0.457251521
         },
         "durations": [
           {
-            "duration": 0.030553824,
-            "location": "HomePageUIValidation.feature:5"
+            "duration": 0.457251521,
+            "location": "ComputerListSortingValidation.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "user filters list by \"testing\"",
+        "aggregatedDurations": {
+          "average": 0.660098561,
+          "median": 0.660098561
+        },
+        "durations": [
+          {
+            "duration": 0.660098561,
+            "location": "ComputerListSortingValidation.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "user filters list by \"Z\"",
+        "aggregatedDurations": {
+          "average": 1.818459421,
+          "median": 1.818459421
+        },
+        "durations": [
+          {
+            "duration": 1.818459421,
+            "location": "ComputerListSortingValidation.feature:16"
           }
         ]
       }
     ]
   },
   {
-    "source": "^\"([^\"]*)\" is launched and user navigates to homepage$",
+    "source": "^user sees computer list table$",
     "steps": [
       {
-        "name": "\"Chrome\" is launched and user navigates to homepage",
+        "name": "user sees computer list table",
         "aggregatedDurations": {
-          "average": 0.361627262,
-          "median": 0.361627262
+          "average": 0.052495295,
+          "median": 0.052495295
         },
         "durations": [
           {
-            "duration": 0.361627262,
-            "location": "HomePageUIValidation.feature:4"
+            "duration": 0.052495295,
+            "location": "ComputerListSortingValidation.feature:5"
           }
         ]
       }
     ]
   },
   {
-    "source": "^computer database list table should be displayed$",
+    "source": "^Delete this computer button should exist$",
     "steps": [
       {
-        "name": "computer database list table should be displayed",
+        "name": "Delete this computer button should exist",
         "aggregatedDurations": {
-          "average": 0.056900383,
-          "median": 0.056900383
+          "average": 0.031776643,
+          "median": 0.031776643
         },
         "durations": [
           {
-            "duration": 0.056900383,
-            "location": "HomePageUIValidation.feature:8"
+            "duration": 0.031776643,
+            "location": "EditComputerValidation.feature:10"
           }
         ]
       }
     ]
   },
   {
-    "source": "^header of the page should display the \"([^\"]*)\" link having \"([^\"]*)\" background color$",
+    "source": "^user clicks on Cancel button$",
     "steps": [
       {
-        "name": "header of the page should display the \"Play sample application — Computer database\" link having \"black\" background color",
+        "name": "user clicks on Cancel button",
         "aggregatedDurations": {
-          "average": 0.111952871,
-          "median": 0.111952871
+          "average": 0.383413949,
+          "median": 0.383413949
         },
         "durations": [
           {
-            "duration": 0.111952871,
-            "location": "HomePageUIValidation.feature:6"
+            "duration": 0.383413949,
+            "location": "AddNewCompPositiveValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on homepage$",
+    "steps": [
+      {
+        "name": "user is on homepage",
+        "aggregatedDurations": {
+          "average": 0.123876438,
+          "median": 0.123876438
+        },
+        "durations": [
+          {
+            "duration": 0.123876438,
+            "location": "AddNewCompPositiveValidation.feature:4"
           }
         ]
       }
@@ -77,13 +121,1357 @@
       {
         "name": "label for total computers found should be displayed",
         "aggregatedDurations": {
-          "average": 0.056449996,
-          "median": 0.056449996
+          "average": 0.043800255,
+          "median": 0.043800255
         },
         "durations": [
           {
-            "duration": 0.056449996,
+            "duration": 0.043800255,
             "location": "HomePageUIValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Homepage should be displayed$",
+    "steps": [
+      {
+        "name": "Homepage should be displayed",
+        "aggregatedDurations": {
+          "average": 0.022538897,
+          "median": 0.022538897
+        },
+        "durations": [
+          {
+            "duration": 0.022538897,
+            "location": "AddNewCompPositiveValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees computer list sorted with the name \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user sees computer list sorted with the name \"testing\"",
+        "aggregatedDurations": {
+          "average": 0.563216058,
+          "median": 0.563216058
+        },
+        "durations": [
+          {
+            "duration": 0.563216058,
+            "location": "ComputerListSortingValidation.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^clicks on the name of first computer in the list$",
+    "steps": [
+      {
+        "name": "clicks on the name of first computer in the list",
+        "aggregatedDurations": {
+          "average": 0.393514331,
+          "median": 0.393514331
+        },
+        "durations": [
+          {
+            "duration": 0.378784037,
+            "location": "EditComputerValidation.feature:6"
+          },
+          {
+            "duration": 0.408244626,
+            "location": "EditComputerValidation.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" and \"([^\"]*)\" buttons in the footer is visible$",
+    "steps": [
+      {
+        "name": "\"Next\" and \"Previous\" buttons in the footer is visible",
+        "aggregatedDurations": {
+          "average": 0.090716604,
+          "median": 0.090716604
+        },
+        "durations": [
+          {
+            "duration": 0.090716604,
+            "location": "HomePageUIValidation.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edit Computer page should be opened$",
+    "steps": [
+      {
+        "name": "Edit Computer page should be opened",
+        "aggregatedDurations": {
+          "average": 0.052731563,
+          "median": 0.052731563
+        },
+        "durations": [
+          {
+            "duration": 0.052731563,
+            "location": "DeleteComputerValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on Computer name column$",
+    "steps": [
+      {
+        "name": "user clicks on Computer name column",
+        "aggregatedDurations": {
+          "average": 0.133221539,
+          "median": 0.133221539
+        },
+        "durations": [
+          {
+            "duration": 0.133221539,
+            "location": "SortByColumnValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees homepage$",
+    "steps": [
+      {
+        "name": "user sees homepage",
+        "aggregatedDurations": {
+          "average": 0.006841538,
+          "median": 0.006841538
+        },
+        "durations": [
+          {
+            "duration": 0.006841538,
+            "location": "EditComputerValidation.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^change discontinued date to \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "change discontinued date to \"0001-01-01\"",
+        "aggregatedDurations": {
+          "average": 0.251138312,
+          "median": 0.251138312
+        },
+        "durations": [
+          {
+            "duration": 0.251138312,
+            "location": "EditComputerValidation.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^title of the page is \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "title of the page is \"Computers database\"",
+        "aggregatedDurations": {
+          "average": 0.00728028,
+          "median": 0.00728028
+        },
+        "durations": [
+          {
+            "duration": 0.00728028,
+            "location": "HomePageUIValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^computer database list table should be displayed$",
+    "steps": [
+      {
+        "name": "computer database list table should be displayed",
+        "aggregatedDurations": {
+          "average": 0.015800885,
+          "median": 0.015800885
+        },
+        "durations": [
+          {
+            "duration": 0.015800885,
+            "location": "HomePageUIValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees the list of computers sorted alphabetically in ascending order$",
+    "steps": [
+      {
+        "name": "user sees the list of computers sorted alphabetically in ascending order",
+        "aggregatedDurations": {
+          "average": 2.098027698,
+          "median": 2.098027698
+        },
+        "durations": [
+          {
+            "duration": 2.098027698,
+            "location": "ComputerListSortingValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^note the total number of computers$",
+    "steps": [
+      {
+        "name": "note the total number of computers",
+        "aggregatedDurations": {
+          "average": 0.046872586,
+          "median": 0.046872586
+        },
+        "durations": [
+          {
+            "duration": 0.046872586,
+            "location": "AddNewCompPositiveValidation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigates to homepage$",
+    "steps": [
+      {
+        "name": "user navigates to homepage",
+        "aggregatedDurations": {
+          "average": 0.007212302,
+          "median": 0.007212302
+        },
+        "durations": [
+          {
+            "duration": 0.007212302,
+            "location": "EditComputerValidation.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees database table$",
+    "steps": [
+      {
+        "name": "user sees database table",
+        "aggregatedDurations": {
+          "average": 0.012415095,
+          "median": 0.012415095
+        },
+        "durations": [
+          {
+            "duration": 0.012415095,
+            "location": "SortByColumnValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the total number of computers should be decreased by (\\d+) in Pagination footer$",
+    "steps": [
+      {
+        "name": "the total number of computers should be decreased by 1 in Pagination footer",
+        "aggregatedDurations": {
+          "average": 0.04078921,
+          "median": 0.04078921
+        },
+        "durations": [
+          {
+            "duration": 0.04078921,
+            "location": "DeleteComputerValidation.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" label should be displayed$",
+    "steps": [
+      {
+        "name": "\"Add a computer\" label should be displayed",
+        "aggregatedDurations": {
+          "average": 0.053777793,
+          "median": 0.053777793
+        },
+        "durations": [
+          {
+            "duration": 0.053777793,
+            "location": "AddNewCompPositiveValidation.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "\"Computer name\" label should be displayed",
+        "aggregatedDurations": {
+          "average": 0.06660881,
+          "median": 0.06660881
+        },
+        "durations": [
+          {
+            "duration": 0.06660881,
+            "location": "AddNewCompPositiveValidation.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "\"Introduced date\" label should be displayed",
+        "aggregatedDurations": {
+          "average": 0.054168819,
+          "median": 0.054168819
+        },
+        "durations": [
+          {
+            "duration": 0.054168819,
+            "location": "AddNewCompPositiveValidation.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "\"Discontinued date\" label should be displayed",
+        "aggregatedDurations": {
+          "average": 0.059263413,
+          "median": 0.059263413
+        },
+        "durations": [
+          {
+            "duration": 0.059263413,
+            "location": "AddNewCompPositiveValidation.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "\"Company\" label should be displayed",
+        "aggregatedDurations": {
+          "average": 0.047385066,
+          "median": 0.047385066
+        },
+        "durations": [
+          {
+            "duration": 0.047385066,
+            "location": "AddNewCompPositiveValidation.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" is launched and user navigates to homepage$",
+    "steps": [
+      {
+        "name": "\"Chrome\" is launched and user navigates to homepage",
+        "aggregatedDurations": {
+          "average": 0.080845613,
+          "median": 0.080845613
+        },
+        "durations": [
+          {
+            "duration": 0.080845613,
+            "location": "HomePageUIValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^clicks on \"([^\"]*)\" button$",
+    "steps": [
+      {
+        "name": "clicks on \"Create this computer\" button",
+        "aggregatedDurations": {
+          "average": 1.227762138,
+          "median": 1.227762138
+        },
+        "durations": [
+          {
+            "duration": 1.962873984,
+            "location": "AddNewCompNegativeValidation.feature:8"
+          },
+          {
+            "duration": 0.492650293,
+            "location": "AddNewCompNegativeValidation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on Homepage$",
+    "steps": [
+      {
+        "name": "user is on Homepage",
+        "aggregatedDurations": {
+          "average": 0.089956611,
+          "median": 0.089956611
+        },
+        "durations": [
+          {
+            "duration": 0.089956611,
+            "location": "DeleteComputerValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user filters the list by new name$",
+    "steps": [
+      {
+        "name": "user filters the list by new name",
+        "aggregatedDurations": {
+          "average": 0.405423405,
+          "median": 0.405423405
+        },
+        "durations": [
+          {
+            "duration": 0.405423405,
+            "location": "EditComputerValidation.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^input field to filter the computers by name should be displayed$",
+    "steps": [
+      {
+        "name": "input field to filter the computers by name should be displayed",
+        "aggregatedDurations": {
+          "average": 0.030061994,
+          "median": 0.030061994
+        },
+        "durations": [
+          {
+            "duration": 0.030061994,
+            "location": "HomePageUIValidation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on homepage of computer database page$",
+    "steps": [
+      {
+        "name": "user is on homepage of computer database page",
+        "aggregatedDurations": {
+          "average": 0.076932124,
+          "median": 0.076932124
+        },
+        "durations": [
+          {
+            "duration": 0.076932124,
+            "location": "EditComputerValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enters \"([^\"]*)\" as Discontinued date$",
+    "steps": [
+      {
+        "name": "enters \"2017-12-01\" as Discontinued date",
+        "aggregatedDurations": {
+          "average": 0.198376657,
+          "median": 0.198376657
+        },
+        "durations": [
+          {
+            "duration": 0.198376657,
+            "location": "AddNewCompPositiveValidation.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^note the total number of computers in pagination footer$",
+    "steps": [
+      {
+        "name": "note the total number of computers in pagination footer",
+        "aggregatedDurations": {
+          "average": 0.058362221,
+          "median": 0.058362221
+        },
+        "durations": [
+          {
+            "duration": 0.058362221,
+            "location": "DeleteComputerValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees add new computer screen$",
+    "steps": [
+      {
+        "name": "user sees add new computer screen",
+        "aggregatedDurations": {
+          "average": 0.029745211,
+          "median": 0.029745211
+        },
+        "durations": [
+          {
+            "duration": 0.029745211,
+            "location": "AddNewCompNegativeValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the total number of computers should be decreased by (\\d+) in Header$",
+    "steps": [
+      {
+        "name": "the total number of computers should be decreased by 1 in Header",
+        "aggregatedDurations": {
+          "average": 0.033178222,
+          "median": 0.033178222
+        },
+        "durations": [
+          {
+            "duration": 0.033178222,
+            "location": "DeleteComputerValidation.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on Add new computer button$",
+    "steps": [
+      {
+        "name": "User clicks on Add new computer button",
+        "aggregatedDurations": {
+          "average": 0.429613287,
+          "median": 0.429613287
+        },
+        "durations": [
+          {
+            "duration": 0.418411438,
+            "location": "AddNewCompPositiveValidation.feature:5"
+          },
+          {
+            "duration": 0.440815137,
+            "location": "AddNewCompPositiveValidation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Edit page should display Save this computer and Cancel buttons$",
+    "steps": [
+      {
+        "name": "Edit page should display Save this computer and Cancel buttons",
+        "aggregatedDurations": {
+          "average": 0.072268207,
+          "median": 0.072268207
+        },
+        "durations": [
+          {
+            "duration": 0.072268207,
+            "location": "EditComputerValidation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks first computer name from the list$",
+    "steps": [
+      {
+        "name": "user clicks first computer name from the list",
+        "aggregatedDurations": {
+          "average": 0.515023444,
+          "median": 0.515023444
+        },
+        "durations": [
+          {
+            "duration": 0.515023444,
+            "location": "DeleteComputerValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigates to HomePage$",
+    "steps": [
+      {
+        "name": "user navigates to HomePage",
+        "aggregatedDurations": {
+          "average": 0.020431721,
+          "median": 0.020431721
+        },
+        "durations": [
+          {
+            "duration": 0.020431721,
+            "location": "DeleteComputerValidation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" button of \"([^\"]*)\" color should be displayed$",
+    "steps": [
+      {
+        "name": "\"Filter by name\" button of \"blue\" color should be displayed",
+        "aggregatedDurations": {
+          "average": 0.032018142,
+          "median": 0.032018142
+        },
+        "durations": [
+          {
+            "duration": 0.032018142,
+            "location": "HomePageUIValidation.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "\"Add a new computer\" button of \"green\" color should be displayed",
+        "aggregatedDurations": {
+          "average": 0.033012483,
+          "median": 0.033012483
+        },
+        "durations": [
+          {
+            "duration": 0.033012483,
+            "location": "HomePageUIValidation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the total number of computers should be increased by (\\d+)$",
+    "steps": [
+      {
+        "name": "the total number of computers should be increased by 1",
+        "aggregatedDurations": {
+          "average": 0.049720689,
+          "median": 0.049720689
+        },
+        "durations": [
+          {
+            "duration": 0.049720689,
+            "location": "AddNewCompPositiveValidation.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^change introduced date to \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "change introduced date to \"0001-01-01\"",
+        "aggregatedDurations": {
+          "average": 0.152754983,
+          "median": 0.152754983
+        },
+        "durations": [
+          {
+            "duration": 0.152754983,
+            "location": "EditComputerValidation.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user note first computer details in the list$",
+    "steps": [
+      {
+        "name": "user note first computer details in the list",
+        "aggregatedDurations": {
+          "average": 0.159766029,
+          "median": 0.159766029
+        },
+        "durations": [
+          {
+            "duration": 0.159766029,
+            "location": "EditComputerValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the total computer count should be same$",
+    "steps": [
+      {
+        "name": "the total computer count should be same",
+        "aggregatedDurations": {
+          "average": 0.051430387,
+          "median": 0.051430387
+        },
+        "durations": [
+          {
+            "duration": 0.051430387,
+            "location": "ComputerListSortingValidation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees delete this computer button$",
+    "steps": [
+      {
+        "name": "user sees delete this computer button",
+        "aggregatedDurations": {
+          "average": 0.032557234,
+          "median": 0.032557234
+        },
+        "durations": [
+          {
+            "duration": 0.032557234,
+            "location": "DeleteComputerValidation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^append \"([^\"]*)\" at the end of the name of the computer$",
+    "steps": [
+      {
+        "name": "append \"NIA123\" at the end of the name of the computer",
+        "aggregatedDurations": {
+          "average": 0.081345306,
+          "median": 0.081345306
+        },
+        "durations": [
+          {
+            "duration": 0.081345306,
+            "location": "EditComputerValidation.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enters \"([^\"]*)\" as Computer name$",
+    "steps": [
+      {
+        "name": "user enters \"NIA123\" as Computer name",
+        "aggregatedDurations": {
+          "average": 0.127140852,
+          "median": 0.127140852
+        },
+        "durations": [
+          {
+            "duration": 0.127140852,
+            "location": "AddNewCompPositiveValidation.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User sets \"([^\"]*)\" computer name, \"([^\"]*)\" introduced date, \"([^\"]*)\" Discontinued date, \"([^\"]*)\" Company name$",
+    "steps": [
+      {
+        "name": "User sets \"\" computer name, \"\" introduced date, \"\" Discontinued date, \"-- Choose a company --\" Company name",
+        "aggregatedDurations": {
+          "average": 1.223480889,
+          "median": 1.223480889
+        },
+        "durations": [
+          {
+            "duration": 1.223480889,
+            "location": "AddNewCompNegativeValidation.feature:7"
+          }
+        ]
+      },
+      {
+        "name": "User sets \"\" computer name, \"01-01-01\" introduced date, \"2017-01-01\" Discontinued date, \"Samsung Electronics\" Company name",
+        "aggregatedDurations": {
+          "average": 1.102834033,
+          "median": 1.102834033
+        },
+        "durations": [
+          {
+            "duration": 1.102834033,
+            "location": "AddNewCompNegativeValidation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks delete this computer button$",
+    "steps": [
+      {
+        "name": "user clicks delete this computer button",
+        "aggregatedDurations": {
+          "average": 0.499447171,
+          "median": 0.499447171
+        },
+        "durations": [
+          {
+            "duration": 0.499447171,
+            "location": "DeleteComputerValidation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Add a computer page should be displayed$",
+    "steps": [
+      {
+        "name": "Add a computer page should be displayed",
+        "aggregatedDurations": {
+          "average": 0.023725738,
+          "median": 0.023725738
+        },
+        "durations": [
+          {
+            "duration": 0.029379524,
+            "location": "AddNewCompPositiveValidation.feature:6"
+          },
+          {
+            "duration": 0.018071952,
+            "location": "AddNewCompPositiveValidation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the list should not change$",
+    "steps": [
+      {
+        "name": "the list should not change",
+        "aggregatedDurations": {
+          "average": 0.073062409,
+          "median": 0.073062409
+        },
+        "durations": [
+          {
+            "duration": 0.073062409,
+            "location": "ComputerListSortingValidation.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^header of the page should display \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "header of the page should display \"Edit computer\"",
+        "aggregatedDurations": {
+          "average": 0.037570118,
+          "median": 0.037570118
+        },
+        "durations": [
+          {
+            "duration": 0.037570118,
+            "location": "EditComputerValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user click on next button$",
+    "steps": [
+      {
+        "name": "user click on next button",
+        "aggregatedDurations": {
+          "average": 0.35105913,
+          "median": 0.35105913
+        },
+        "durations": [
+          {
+            "duration": 0.35105913,
+            "location": "ComputerListSortingValidation.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^header of the page should display the \"([^\"]*)\" link having \"([^\"]*)\" background color$",
+    "steps": [
+      {
+        "name": "header of the page should display the \"Play sample application — Computer database\" link having \"black\" background color",
+        "aggregatedDurations": {
+          "average": 0.072496377,
+          "median": 0.072496377
+        },
+        "durations": [
+          {
+            "duration": 0.072496377,
+            "location": "HomePageUIValidation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^sees the next (\\d+) computers in the list with name containing \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "sees the next 10 computers in the list with name containing \"Z\"",
+        "aggregatedDurations": {
+          "average": 0.224682447,
+          "median": 0.224682447
+        },
+        "durations": [
+          {
+            "duration": 0.224682447,
+            "location": "ComputerListSortingValidation.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Computer name field should be highlighted in red$",
+    "steps": [
+      {
+        "name": "Computer name field should be highlighted in red",
+        "aggregatedDurations": {
+          "average": 0.106818573,
+          "median": 0.106818573
+        },
+        "durations": [
+          {
+            "duration": 0.086609475,
+            "location": "AddNewCompNegativeValidation.feature:9"
+          },
+          {
+            "duration": 0.127027671,
+            "location": "AddNewCompNegativeValidation.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Computer Edit page should be opened$",
+    "steps": [
+      {
+        "name": "Computer Edit page should be opened",
+        "aggregatedDurations": {
+          "average": 0.050119158,
+          "median": 0.050119158
+        },
+        "durations": [
+          {
+            "duration": 0.062798614,
+            "location": "EditComputerValidation.feature:7"
+          },
+          {
+            "duration": 0.037439702,
+            "location": "EditComputerValidation.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^selects \"([^\"]*)\" as company$",
+    "steps": [
+      {
+        "name": "selects \"Samsung Electronics\" as company",
+        "aggregatedDurations": {
+          "average": 0.411324815,
+          "median": 0.411324815
+        },
+        "durations": [
+          {
+            "duration": 0.411324815,
+            "location": "AddNewCompPositiveValidation.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the computer list table should be gone$",
+    "steps": [
+      {
+        "name": "the computer list table should be gone",
+        "aggregatedDurations": {
+          "average": 13.027646001,
+          "median": 13.027646001
+        },
+        "durations": [
+          {
+            "duration": 13.027646001,
+            "location": "ComputerListSortingValidation.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the total number of computers found in the header must be noted$",
+    "steps": [
+      {
+        "name": "the total number of computers found in the header must be noted",
+        "aggregatedDurations": {
+          "average": 0.04988867,
+          "median": 0.04988867
+        },
+        "durations": [
+          {
+            "duration": 0.04988867,
+            "location": "ComputerListSortingValidation.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^clicks on Create this computer button$",
+    "steps": [
+      {
+        "name": "clicks on Create this computer button",
+        "aggregatedDurations": {
+          "average": 0.506359768,
+          "median": 0.506359768
+        },
+        "durations": [
+          {
+            "duration": 0.506359768,
+            "location": "AddNewCompPositiveValidation.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^pagination should be present in the footer$",
+    "steps": [
+      {
+        "name": "pagination should be present in the footer",
+        "aggregatedDurations": {
+          "average": 0.046441131,
+          "median": 0.046441131
+        },
+        "durations": [
+          {
+            "duration": 0.046441131,
+            "location": "HomePageUIValidation.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^gets a confirmation message \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "gets a confirmation message \"Done! Computer NIA123 has been created\"",
+        "aggregatedDurations": {
+          "average": 0.039952389,
+          "median": 0.039952389
+        },
+        "durations": [
+          {
+            "duration": 0.039952389,
+            "location": "AddNewCompPositiveValidation.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees the Delete confirmation message on the homepage$",
+    "steps": [
+      {
+        "name": "user sees the Delete confirmation message on the homepage",
+        "aggregatedDurations": {
+          "average": 0.090226856,
+          "median": 0.090226856
+        },
+        "durations": [
+          {
+            "duration": 0.090226856,
+            "location": "DeleteComputerValidation.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User navigates to Hompage$",
+    "steps": [
+      {
+        "name": "User navigates to Hompage",
+        "aggregatedDurations": {
+          "average": 0.313407403,
+          "median": 0.313407403
+        },
+        "durations": [
+          {
+            "duration": 0.313407403,
+            "location": "AddNewCompNegativeValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks Add a new computer button$",
+    "steps": [
+      {
+        "name": "User clicks Add a new computer button",
+        "aggregatedDurations": {
+          "average": 0.570281,
+          "median": 0.570281
+        },
+        "durations": [
+          {
+            "duration": 0.570281,
+            "location": "AddNewCompNegativeValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigates to dashboard$",
+    "steps": [
+      {
+        "name": "user navigates to dashboard",
+        "aggregatedDurations": {
+          "average": 0.073832726,
+          "median": 0.073832726
+        },
+        "durations": [
+          {
+            "duration": 0.073832726,
+            "location": "SortByColumnValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks filter by name button$",
+    "steps": [
+      {
+        "name": "User clicks filter by name button",
+        "aggregatedDurations": {
+          "average": 0.484442186,
+          "median": 0.484442186
+        },
+        "durations": [
+          {
+            "duration": 0.484442186,
+            "location": "ComputerListSortingValidation.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the number of computers will be noted from the header$",
+    "steps": [
+      {
+        "name": "the number of computers will be noted from the header",
+        "aggregatedDurations": {
+          "average": 0.04773808,
+          "median": 0.04773808
+        },
+        "durations": [
+          {
+            "duration": 0.04773808,
+            "location": "ComputerListSortingValidation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should be redirected to homepage$",
+    "steps": [
+      {
+        "name": "user should be redirected to homepage",
+        "aggregatedDurations": {
+          "average": 0.007760144,
+          "median": 0.007760144
+        },
+        "durations": [
+          {
+            "duration": 0.007760144,
+            "location": "AddNewCompPositiveValidation.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks Cancel button$",
+    "steps": [
+      {
+        "name": "user clicks Cancel button",
+        "aggregatedDurations": {
+          "average": 0.366879971,
+          "median": 0.366879971
+        },
+        "durations": [
+          {
+            "duration": 0.366879971,
+            "location": "EditComputerValidation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enters \"([^\"]*)\" as Introduced date$",
+    "steps": [
+      {
+        "name": "enters \"2017-01-04\" as Introduced date",
+        "aggregatedDurations": {
+          "average": 0.187774869,
+          "median": 0.187774869
+        },
+        "durations": [
+          {
+            "duration": 0.187774869,
+            "location": "AddNewCompPositiveValidation.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees edit confirmation message$",
+    "steps": [
+      {
+        "name": "user sees edit confirmation message",
+        "aggregatedDurations": {
+          "average": 0.030009928,
+          "median": 0.030009928
+        },
+        "durations": [
+          {
+            "duration": 0.030009928,
+            "location": "EditComputerValidation.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^change company to \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "change company to \"Apple Inc.\"",
+        "aggregatedDurations": {
+          "average": 0.244273187,
+          "median": 0.244273187
+        },
+        "durations": [
+          {
+            "duration": 0.244273187,
+            "location": "EditComputerValidation.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^note the total number of computers in the database$",
+    "steps": [
+      {
+        "name": "note the total number of computers in the database",
+        "aggregatedDurations": {
+          "average": 0.056167289,
+          "median": 0.056167289
+        },
+        "durations": [
+          {
+            "duration": 0.056167289,
+            "location": "DeleteComputerValidation.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user sees label \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user sees label \"Nothing to display\"",
+        "aggregatedDurations": {
+          "average": 0.034104441,
+          "median": 0.034104441
+        },
+        "durations": [
+          {
+            "duration": 0.034104441,
+            "location": "ComputerListSortingValidation.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user navigates to the homepage$",
+    "steps": [
+      {
+        "name": "user navigates to the homepage",
+        "aggregatedDurations": {
+          "average": 0.126694632,
+          "median": 0.126694632
+        },
+        "durations": [
+          {
+            "duration": 0.126694632,
+            "location": "ComputerListSortingValidation.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click Save this computer button$",
+    "steps": [
+      {
+        "name": "click Save this computer button",
+        "aggregatedDurations": {
+          "average": 0.479052825,
+          "median": 0.479052825
+        },
+        "durations": [
+          {
+            "duration": 0.479052825,
+            "location": "EditComputerValidation.feature:19"
           }
         ]
       }
