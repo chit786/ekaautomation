@@ -1,15 +1,14 @@
 package com.DemoFlight.pages;
-import cucumber.api.Scenario;
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.*;
-import org.openqa.selenium.remote.Augmenter;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.Assert;
 
-import java.io.File;
+
 import java.util.List;
-import org.junit.After;
+
 /**
  * Created by chitrang on 18/02/17.
  */

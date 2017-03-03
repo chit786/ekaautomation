@@ -1,8 +1,6 @@
 package com.DemoFlight.pages;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import jdk.nashorn.internal.ir.BlockLexicalContext;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

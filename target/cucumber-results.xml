@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="69.232918">
-<testcase classname="User should see valid error messages for invalid computer details on add computer screen" name="Valid error messages should be displayed when user enters invalid details for adding new computer" time="12.479903">
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="66.249703">
+<testcase classname="User should see valid error messages for invalid computer details on add computer screen" name="Valid error messages should be displayed when user enters invalid details for adding new computer" time="12.466368">
 <failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red(AddNewCompNegativeValidationSDF.java:48)&#10;&#9;at ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)&#10;"><![CDATA[Given User navigates to Hompage.............................................passed
 When User clicks Add a new computer button..................................passed
 Then user sees add new computer screen......................................passed
@@ -28,7 +28,7 @@ java.lang.AssertionError
 	at ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)
 ]]></failure>
 </testcase>
-<testcase classname="User should be able to add new computer to the database" name="User should be able to add new computer : positive scenario" time="7.218792">
+<testcase classname="User should be able to add new computer to the database" name="User should be able to add new computer : positive scenario" time="9.276249">
 <system-out><![CDATA[Given user is on homepage...................................................passed
 When User clicks on Add new computer button.................................passed
 Then Add a computer page should be displayed................................passed
@@ -52,7 +52,7 @@ And gets a confirmation message "Done! Computer NIA123 has been created"....pass
 And the total number of computers should be increased by 1..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="As a user I should be able to see,filter and sort list of computers in database" name="user should be able to filter computers by name on Computer database HomePage" time="24.560845">
+<testcase classname="As a user I should be able to see,filter and sort list of computers in database" name="user should be able to filter computers by name on Computer database HomePage" time="21.660177">
 <failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change(ComputerListSortingValidationSDF.java:97)&#10;&#9;at ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)&#10;"><![CDATA[Given user navigates to the homepage........................................passed
 When user sees computer list table..........................................passed
 Then user sees the list of computers sorted alphabetically in ascending order.passed
@@ -83,7 +83,7 @@ java.lang.AssertionError
 	at ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)
 ]]></failure>
 </testcase>
-<testcase classname="As a user i should be able to delete any computer in the database" name="Verify Delete computer Validation for Computer Database website" time="5.346826">
+<testcase classname="As a user i should be able to delete any computer in the database" name="Verify Delete computer Validation for Computer Database website" time="5.589531">
 <system-out><![CDATA[Given user is on Homepage...................................................passed
 And note the total number of computers in the database......................passed
 And note the total number of computers in pagination footer.................passed
@@ -97,8 +97,8 @@ And the total number of computers should be decreased by 1 in Header........pass
 And the total number of computers should be decreased by 1 in Pagination footer.passed
 ]]></system-out>
 </testcase>
-<testcase classname="As a user I should be able to edit any computer details from the computer list" name="Verify Edit computer Validation for Computer Database website" time="7.271054">
-<failure message="org.junit.ComparisonFailure: expected:&lt;0[4] Jan 0001&gt; but was:&lt;0[1] Jan 0001&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#10;&#9;at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)&#10;&#9;at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)&#10;"><![CDATA[Given user is on homepage of computer database page.........................passed
+<testcase classname="As a user I should be able to edit any computer details from the computer list" name="Verify Edit computer Validation for Computer Database website" time="6.488844">
+<failure message="org.junit.ComparisonFailure: expected:&lt;0[3] Jan 0001&gt; but was:&lt;0[1] Jan 0001&gt;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#10;&#9;at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)&#10;&#9;at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)&#10;"><![CDATA[Given user is on homepage of computer database page.........................passed
 Then user note first computer details in the list...........................passed
 And clicks on the name of first computer in the list........................passed
 And Computer Edit page should be opened.....................................passed
@@ -120,14 +120,14 @@ And user filters the list by new name.......................................pass
 Then user sees updated record for the computer..............................failed
 
 StackTrace:
-org.junit.ComparisonFailure: expected:<0[4] Jan 0001> but was:<0[1] Jan 0001>
+org.junit.ComparisonFailure: expected:<0[3] Jan 0001> but was:<0[1] Jan 0001>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)
 	at ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)
 ]]></failure>
 </testcase>
-<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="4.769846">
+<testcase classname="As a user I should be able to see Computer Database Page" name="User navigates to the website and see Computer Database Home page with desired controls" time="5.060471">
 <system-out><![CDATA[Given "Chrome" is launched and user navigates to homepage...................passed
 When title of the page is "Computers database"..............................passed
 Then header of the page should display the "Play sample application — Computer database" link having "black" background color.passed
@@ -140,7 +140,7 @@ And "Next" and "Previous" buttons in the footer is visible..................pass
 And pagination should be present in the footer..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="As A user I should be able to sort computer database table" name="Verify Sorting on the computer database table for Computer Database website" time="7.585652">
+<testcase classname="As A user I should be able to sort computer database table" name="Verify Sorting on the computer database table for Computer Database website" time="5.708063">
 <failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at StepDefinitions.SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order(SortByColumnValidationSDF.java:29)&#10;&#9;at ✽.And Computer details should arrange in descending alphabetical order(SortByColumnValidation.feature:8)&#10;"><![CDATA[Given user navigates to dashboard...........................................passed
 When user sees database table...............................................passed
 And user clicks on Computer name column.....................................passed

@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5738715776,
+  "duration": 7870029171,
   "status": "passed"
 });
 formatter.scenario({
@@ -113,21 +113,21 @@ formatter.match({
   "location": "AddNewCompNegativeValidationSDF.user_navigates_to_Hompage()"
 });
 formatter.result({
-  "duration": 313407403,
+  "duration": 502298577,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompNegativeValidationSDF.user_clicks_Add_a_new_computer_button()"
 });
 formatter.result({
-  "duration": 570281000,
+  "duration": 448596915,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompNegativeValidationSDF.user_sees_add_new_computer_screen()"
 });
 formatter.result({
-  "duration": 29745211,
+  "duration": 53101443,
   "status": "passed"
 });
 formatter.match({
@@ -152,7 +152,7 @@ formatter.match({
   "location": "AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1223480889,
+  "duration": 695429936,
   "status": "passed"
 });
 formatter.match({
@@ -165,14 +165,14 @@ formatter.match({
   "location": "AddNewCompNegativeValidationSDF.clicks_on_button(String)"
 });
 formatter.result({
-  "duration": 1962873984,
+  "duration": 485623375,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompNegativeValidationSDF.computer_name_field_should_be_highlighted_in_red()"
 });
 formatter.result({
-  "duration": 86609475,
+  "duration": 69372774,
   "status": "passed"
 });
 formatter.match({
@@ -197,7 +197,7 @@ formatter.match({
   "location": "AddNewCompNegativeValidationSDF.user_sets_computer_name_introduced_date_Discontinued_date_Company_name(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1102834033,
+  "duration": 960710851,
   "status": "passed"
 });
 formatter.match({
@@ -210,21 +210,21 @@ formatter.match({
   "location": "AddNewCompNegativeValidationSDF.clicks_on_button(String)"
 });
 formatter.result({
-  "duration": 492650293,
+  "duration": 461001051,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompNegativeValidationSDF.computer_name_field_should_be_highlighted_in_red()"
 });
 formatter.result({
-  "duration": 127027671,
+  "duration": 110425341,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red()"
 });
 formatter.result({
-  "duration": 43242671,
+  "duration": 41101895,
   "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat StepDefinitions.AddNewCompNegativeValidationSDF.introduced_date_field_highlighted_in_red(AddNewCompNegativeValidationSDF.java:48)\n\tat ✽.Then Introduced date field highlighted in red(AddNewCompNegativeValidation.feature:13)\n",
   "status": "failed"
 });
@@ -320,7 +320,7 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 789034476,
+  "duration": 768676977,
   "status": "passed"
 });
 formatter.uri("AddNewCompPositiveValidation.feature");
@@ -332,7 +332,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3759391520,
+  "duration": 4487970500,
   "status": "passed"
 });
 formatter.scenario({
@@ -458,56 +458,56 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 123876438,
+  "duration": 146837817,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_clicks_on_Add_new_computer_button()"
 });
 formatter.result({
-  "duration": 418411438,
+  "duration": 598145439,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.add_a_computer_page_should_be_displayed()"
 });
 formatter.result({
-  "duration": 29379524,
+  "duration": 62416404,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_clicks_on_Cancel_button()"
 });
 formatter.result({
-  "duration": 383413949,
+  "duration": 1389398447,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.homepage_should_be_displayed()"
 });
 formatter.result({
-  "duration": 22538897,
+  "duration": 11475399,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.note_the_total_number_of_computers()"
 });
 formatter.result({
-  "duration": 46872586,
+  "duration": 65007871,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_clicks_on_Add_new_computer_button()"
 });
 formatter.result({
-  "duration": 440815137,
+  "duration": 663704293,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.add_a_computer_page_should_be_displayed()"
 });
 formatter.result({
-  "duration": 18071952,
+  "duration": 31408098,
   "status": "passed"
 });
 formatter.match({
@@ -520,7 +520,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.label_should_be_displayed(String)"
 });
 formatter.result({
-  "duration": 53777793,
+  "duration": 44760869,
   "status": "passed"
 });
 formatter.match({
@@ -533,7 +533,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.label_should_be_displayed(String)"
 });
 formatter.result({
-  "duration": 66608810,
+  "duration": 35733274,
   "status": "passed"
 });
 formatter.match({
@@ -546,7 +546,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.label_should_be_displayed(String)"
 });
 formatter.result({
-  "duration": 54168819,
+  "duration": 32937833,
   "status": "passed"
 });
 formatter.match({
@@ -559,7 +559,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.label_should_be_displayed(String)"
 });
 formatter.result({
-  "duration": 59263413,
+  "duration": 31565346,
   "status": "passed"
 });
 formatter.match({
@@ -572,7 +572,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.label_should_be_displayed(String)"
 });
 formatter.result({
-  "duration": 47385066,
+  "duration": 41143998,
   "status": "passed"
 });
 formatter.match({
@@ -585,7 +585,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_enters_as_Computer_name(String)"
 });
 formatter.result({
-  "duration": 127140852,
+  "duration": 68838152,
   "status": "passed"
 });
 formatter.match({
@@ -598,7 +598,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.enters_as_Introduced_date(String)"
 });
 formatter.result({
-  "duration": 187774869,
+  "duration": 208983792,
   "status": "passed"
 });
 formatter.match({
@@ -611,7 +611,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.enters_as_Discontinued_date(String)"
 });
 formatter.result({
-  "duration": 198376657,
+  "duration": 115419389,
   "status": "passed"
 });
 formatter.match({
@@ -624,21 +624,21 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.selects_as_company(String)"
 });
 formatter.result({
-  "duration": 411324815,
+  "duration": 259100593,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.clicks_on_Create_this_computer_button()"
 });
 formatter.result({
-  "duration": 506359768,
+  "duration": 698382559,
   "status": "passed"
 });
 formatter.match({
   "location": "AddNewCompPositiveValidationSDF.user_should_be_redirected_to_homepage()"
 });
 formatter.result({
-  "duration": 7760144,
+  "duration": 8090606,
   "status": "passed"
 });
 formatter.match({
@@ -651,7 +651,7 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.gets_a_confirmation_message(String)"
 });
 formatter.result({
-  "duration": 39952389,
+  "duration": 42545357,
   "status": "passed"
 });
 formatter.match({
@@ -664,11 +664,11 @@ formatter.match({
   "location": "AddNewCompPositiveValidationSDF.the_total_number_of_computers_should_be_increased_by(int)"
 });
 formatter.result({
-  "duration": 49720689,
+  "duration": 35589554,
   "status": "passed"
 });
 formatter.after({
-  "duration": 166406257,
+  "duration": 196793391,
   "status": "passed"
 });
 formatter.uri("ComputerListSortingValidation.feature");
@@ -680,7 +680,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4056709128,
+  "duration": 3280186115,
   "status": "passed"
 });
 formatter.scenario({
@@ -801,49 +801,49 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 126694632,
+  "duration": 132029824,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.user_sees_computer_list_table()"
 });
 formatter.result({
-  "duration": 52495295,
+  "duration": 19260177,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.user_sees_the_list_of_computers_sorted_alphabetically_in_ascending_order()"
 });
 formatter.result({
-  "duration": 2098027698,
+  "duration": 1668647518,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_number_of_computers_will_be_noted_from_the_header()"
 });
 formatter.result({
-  "duration": 47738080,
+  "duration": 43009049,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.user_clicks_filter_by_name_button()"
 });
 formatter.result({
-  "duration": 484442186,
+  "duration": 454528382,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_list_should_not_change()"
 });
 formatter.result({
-  "duration": 73062409,
+  "duration": 76591764,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_total_computer_count_should_be_same()"
 });
 formatter.result({
-  "duration": 51430387,
+  "duration": 57104427,
   "status": "passed"
 });
 formatter.match({
@@ -856,14 +856,14 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_filters_list_by(String)"
 });
 formatter.result({
-  "duration": 457251521,
+  "duration": 383985527,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_computer_list_table_should_be_gone()"
 });
 formatter.result({
-  "duration": 13027646001,
+  "duration": 13046426419,
   "status": "passed"
 });
 formatter.match({
@@ -876,7 +876,7 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_sees_label(String)"
 });
 formatter.result({
-  "duration": 34104441,
+  "duration": 35809319,
   "status": "passed"
 });
 formatter.match({
@@ -889,7 +889,7 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_filters_list_by(String)"
 });
 formatter.result({
-  "duration": 660098561,
+  "duration": 427169251,
   "status": "passed"
 });
 formatter.match({
@@ -902,7 +902,7 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_sees_computer_list_sorted_with_the_name(String)"
 });
 formatter.result({
-  "duration": 563216058,
+  "duration": 465682401,
   "status": "passed"
 });
 formatter.match({
@@ -915,21 +915,21 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.user_filters_list_by(String)"
 });
 formatter.result({
-  "duration": 1818459421,
+  "duration": 367581530,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_total_number_of_computers_found_in_the_header_must_be_noted()"
 });
 formatter.result({
-  "duration": 49888670,
+  "duration": 37807036,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.user_click_on_next_button()"
 });
 formatter.result({
-  "duration": 351059130,
+  "duration": 374233910,
   "status": "passed"
 });
 formatter.match({
@@ -946,14 +946,14 @@ formatter.match({
   "location": "ComputerListSortingValidationSDF.sees_the_next_computers_in_the_list_with_name_containing(int,String)"
 });
 formatter.result({
-  "duration": 224682447,
+  "duration": 208519748,
   "status": "passed"
 });
 formatter.match({
   "location": "ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change()"
 });
 formatter.result({
-  "duration": 21603290,
+  "duration": 31373832,
   "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat StepDefinitions.ComputerListSortingValidationSDF.the_count_of_computers_in_the_header_should_not_change(ComputerListSortingValidationSDF.java:97)\n\tat ✽.Then the count of computers in the header should not change(ComputerListSortingValidation.feature:20)\n",
   "status": "failed"
 });
@@ -983,7 +983,7 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 362235938,
+  "duration": 550231147,
   "status": "passed"
 });
 formatter.uri("DeleteComputerValidation.feature");
@@ -995,7 +995,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3723511213,
+  "duration": 4019483291,
   "status": "passed"
 });
 formatter.scenario({
@@ -1071,63 +1071,63 @@ formatter.match({
   "location": "DeleteComputerValidationSDF.user_is_on_Homepage()"
 });
 formatter.result({
-  "duration": 89956611,
+  "duration": 183602944,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.note_the_total_number_of_computers_in_the_database()"
 });
 formatter.result({
-  "duration": 56167289,
+  "duration": 74537809,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.note_the_total_number_of_computers_in_pagination_footer()"
 });
 formatter.result({
-  "duration": 58362221,
+  "duration": 46554242,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.user_clicks_first_computer_name_from_the_list()"
 });
 formatter.result({
-  "duration": 515023444,
+  "duration": 462414645,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.edit_Computer_page_should_be_opened()"
 });
 formatter.result({
-  "duration": 52731563,
+  "duration": 36328781,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.user_sees_delete_this_computer_button()"
 });
 formatter.result({
-  "duration": 32557234,
+  "duration": 45005865,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.user_clicks_delete_this_computer_button()"
 });
 formatter.result({
-  "duration": 499447171,
+  "duration": 453987489,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.user_navigates_to_HomePage()"
 });
 formatter.result({
-  "duration": 20431721,
+  "duration": 8532889,
   "status": "passed"
 });
 formatter.match({
   "location": "DeleteComputerValidationSDF.user_sees_the_Delete_confirmation_message_on_the_homepage()"
 });
 formatter.result({
-  "duration": 90226856,
+  "duration": 50336674,
   "status": "passed"
 });
 formatter.match({
@@ -1140,7 +1140,7 @@ formatter.match({
   "location": "DeleteComputerValidationSDF.the_total_number_of_computers_should_be_decreased_by_in_Header(int)"
 });
 formatter.result({
-  "duration": 33178222,
+  "duration": 22870750,
   "status": "passed"
 });
 formatter.match({
@@ -1153,11 +1153,11 @@ formatter.match({
   "location": "DeleteComputerValidationSDF.the_total_number_of_computers_should_be_decreased_by_in_Pagination_footer(int)"
 });
 formatter.result({
-  "duration": 40789210,
+  "duration": 35830858,
   "status": "passed"
 });
 formatter.after({
-  "duration": 134442972,
+  "duration": 150044802,
   "status": "passed"
 });
 formatter.uri("EditComputerValidation.feature");
@@ -1169,7 +1169,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3564099490,
+  "duration": 3020141867,
   "status": "passed"
 });
 formatter.scenario({
@@ -1290,28 +1290,28 @@ formatter.match({
   "location": "EditComputerValidationSDF.user_is_on_Homepage()"
 });
 formatter.result({
-  "duration": 76932124,
+  "duration": 104317871,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_note_first_computer_details_in_the_list()"
 });
 formatter.result({
-  "duration": 159766029,
+  "duration": 159961382,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.clicks_on_the_name_of_first_computer_in_the_list()"
 });
 formatter.result({
-  "duration": 378784037,
+  "duration": 393335004,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.computer_Edit_page_should_be_opened()"
 });
 formatter.result({
-  "duration": 62798614,
+  "duration": 42514677,
   "status": "passed"
 });
 formatter.match({
@@ -1324,49 +1324,49 @@ formatter.match({
   "location": "EditComputerValidationSDF.header_of_the_page_should_display(String)"
 });
 formatter.result({
-  "duration": 37570118,
+  "duration": 32530482,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.edit_page_should_display_Save_this_computer_and_Cancel_buttons()"
 });
 formatter.result({
-  "duration": 72268207,
+  "duration": 68818073,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.delete_this_computer_button_should_exist()"
 });
 formatter.result({
-  "duration": 31776643,
+  "duration": 22137447,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_clicks_Cancel_button()"
 });
 formatter.result({
-  "duration": 366879971,
+  "duration": 330981502,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_sees_homepage()"
 });
 formatter.result({
-  "duration": 6841538,
+  "duration": 5555253,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.clicks_on_the_name_of_first_computer_in_the_list()"
 });
 formatter.result({
-  "duration": 408244626,
+  "duration": 372949557,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.computer_Edit_page_should_be_opened()"
 });
 formatter.result({
-  "duration": 37439702,
+  "duration": 16653222,
   "status": "passed"
 });
 formatter.match({
@@ -1379,7 +1379,7 @@ formatter.match({
   "location": "EditComputerValidationSDF.append_at_the_end_of_the_name_of_the_computer(String)"
 });
 formatter.result({
-  "duration": 81345306,
+  "duration": 69538159,
   "status": "passed"
 });
 formatter.match({
@@ -1392,7 +1392,7 @@ formatter.match({
   "location": "EditComputerValidationSDF.change_introduced_date_to(String)"
 });
 formatter.result({
-  "duration": 152754983,
+  "duration": 126809515,
   "status": "passed"
 });
 formatter.match({
@@ -1405,7 +1405,7 @@ formatter.match({
   "location": "EditComputerValidationSDF.change_discontinued_date_to(String)"
 });
 formatter.result({
-  "duration": 251138312,
+  "duration": 213185299,
   "status": "passed"
 });
 formatter.match({
@@ -1418,48 +1418,48 @@ formatter.match({
   "location": "EditComputerValidationSDF.change_company_to(String)"
 });
 formatter.result({
-  "duration": 244273187,
+  "duration": 163964610,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.click_Save_this_computer_button()"
 });
 formatter.result({
-  "duration": 479052825,
+  "duration": 538551652,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_navigates_homepage()"
 });
 formatter.result({
-  "duration": 7212302,
+  "duration": 8535085,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_sees_edit_confirmation_message()"
 });
 formatter.result({
-  "duration": 30009928,
+  "duration": 47403352,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_filters_the_list_by_new_name()"
 });
 formatter.result({
-  "duration": 405423405,
+  "duration": 361723876,
   "status": "passed"
 });
 formatter.match({
   "location": "EditComputerValidationSDF.user_sees_updated_record_for_the_computer()"
 });
 formatter.result({
-  "duration": 97344013,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c0[4] Jan 0001\u003e but was:\u003c0[1] Jan 0001\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)\n\tat ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)\n",
+  "duration": 89235836,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c0[3] Jan 0001\u003e but was:\u003c0[1] Jan 0001\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)\n\tat ✽.Then user sees updated record for the computer(EditComputerValidation.feature:23)\n",
   "status": "failed"
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 319099119,
+  "duration": 300000189,
   "status": "passed"
 });
 formatter.uri("HomePageUIValidation.feature");
@@ -1471,7 +1471,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4163213346,
+  "duration": 4201014365,
   "status": "passed"
 });
 formatter.scenario({
@@ -1548,7 +1548,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.is_launched_and_user_navigates_to_homepage(String)"
 });
 formatter.result({
-  "duration": 80845613,
+  "duration": 121430340,
   "status": "passed"
 });
 formatter.match({
@@ -1561,7 +1561,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.title_of_the_page_is(String)"
 });
 formatter.result({
-  "duration": 7280280,
+  "duration": 16838738,
   "status": "passed"
 });
 formatter.match({
@@ -1578,28 +1578,28 @@ formatter.match({
   "location": "HomePageUIValidationSDF.header_of_the_page_should_display_the_link_having_background_color(String,String)"
 });
 formatter.result({
-  "duration": 72496377,
+  "duration": 101579212,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.label_for_total_computers_found_should_be_displayed()"
 });
 formatter.result({
-  "duration": 43800255,
+  "duration": 29930800,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.computer_database_list_table_should_be_displayed()"
 });
 formatter.result({
-  "duration": 15800885,
+  "duration": 7881055,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.input_field_to_filter_the_computers_by_name_should_be_displayed()"
 });
 formatter.result({
-  "duration": 30061994,
+  "duration": 38324313,
   "status": "passed"
 });
 formatter.match({
@@ -1616,7 +1616,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)"
 });
 formatter.result({
-  "duration": 32018142,
+  "duration": 128415855,
   "status": "passed"
 });
 formatter.match({
@@ -1633,7 +1633,7 @@ formatter.match({
   "location": "HomePageUIValidationSDF.button_of_color_should_be_displayed(String,String)"
 });
 formatter.result({
-  "duration": 33012483,
+  "duration": 98428933,
   "status": "passed"
 });
 formatter.match({
@@ -1650,18 +1650,18 @@ formatter.match({
   "location": "HomePageUIValidationSDF.and_buttons_in_the_footer_is_visible(String,String)"
 });
 formatter.result({
-  "duration": 90716604,
+  "duration": 97950712,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageUIValidationSDF.pagination_should_be_present_in_the_footer()"
 });
 formatter.result({
-  "duration": 46441131,
+  "duration": 44538531,
   "status": "passed"
 });
 formatter.after({
-  "duration": 154158609,
+  "duration": 174138373,
   "status": "passed"
 });
 formatter.uri("SortByColumnValidation.feature");
@@ -1673,7 +1673,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5514148008,
+  "duration": 3137970527,
   "status": "passed"
 });
 formatter.scenario({
@@ -1744,28 +1744,28 @@ formatter.match({
   "location": "SortByColumnValidationSDF.user_navigates_to_dashboard()"
 });
 formatter.result({
-  "duration": 73832726,
+  "duration": 113554405,
   "status": "passed"
 });
 formatter.match({
   "location": "SortByColumnValidationSDF.user_sees_database_table()"
 });
 formatter.result({
-  "duration": 12415095,
+  "duration": 26796345,
   "status": "passed"
 });
 formatter.match({
   "location": "SortByColumnValidationSDF.user_clicks_on_Computer_name_column()"
 });
 formatter.result({
-  "duration": 133221539,
+  "duration": 101856267,
   "status": "passed"
 });
 formatter.match({
   "location": "SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order()"
 });
 formatter.result({
-  "duration": 1517209180,
+  "duration": 1904654321,
   "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat StepDefinitions.SortByColumnValidationSDF.computer_details_should_arrange_in_descending_alphabetical_order(SortByColumnValidationSDF.java:29)\n\tat ✽.And Computer details should arrange in descending alphabetical order(SortByColumnValidation.feature:8)\n",
   "status": "failed"
 });
@@ -1807,7 +1807,7 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded3.png");
 formatter.after({
-  "duration": 334825361,
+  "duration": 423231408,
   "status": "passed"
 });
 });

@@ -121,7 +121,7 @@ Feature: As a user I should be able to edit any computer details from the comput
     And user sees edit confirmation message                               # EditComputerValidationSDF.user_sees_edit_confirmation_message()
     And user filters the list by new name                                 # EditComputerValidationSDF.user_filters_the_list_by_new_name()
     Then user sees updated record for the computer                        # EditComputerValidationSDF.user_sees_updated_record_for_the_computer()
-      org.junit.ComparisonFailure: expected:<0[4] Jan 0001> but was:<0[1] Jan 0001>
+      org.junit.ComparisonFailure: expected:<0[3] Jan 0001> but was:<0[1] Jan 0001>
       	at org.junit.Assert.assertEquals(Assert.java:115)
       	at org.junit.Assert.assertEquals(Assert.java:144)
       	at StepDefinitions.EditComputerValidationSDF.user_sees_updated_record_for_the_computer(EditComputerValidationSDF.java:118)
